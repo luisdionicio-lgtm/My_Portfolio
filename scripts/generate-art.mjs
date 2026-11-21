@@ -2,9 +2,9 @@ import sharp from "sharp";
 import { mkdir } from "node:fs/promises";
 await mkdir("public/projects", { recursive: true });
 await sharp("public/projects/ferremax.png")
-  .resize(1200, 750, { fit: "contain", background: "#f6f6f6" })
+  .resize(1200, 750, { fit: "cover", position: "top" })
   .webp({ quality: 88 })
-  .toFile("public/projects/ferremax.webp");
+  .toFile("public/projects/ferremax-cover.webp");
 for (const [file, title, sub, accent, theme] of [
   [
     "factora",

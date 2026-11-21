@@ -1,3 +1,4 @@
+import Image from "next/image";
 // Iconos oficiales de Devicon, servidos localmente; las etiquetas dan el nombre accesible.
 const icons: Record<string, string> = {
   React: "react",
@@ -39,13 +40,13 @@ export function TechIcon({
 }) {
   return (
     <span className="tech">
-      <span
-        className="tech-icon"
+      <Image
+        className={`tech-icon ${["Next.js", "Flask", "Prisma", "Django"].includes(name) ? "icon-neutral" : ""}`}
+        src={`/icons/${icons[name] || "javascript"}.svg`}
+        alt=""
         aria-hidden="true"
-        style={{
-          maskImage: `url(/icons/${icons[name] || "javascript"}.svg)`,
-          WebkitMaskImage: `url(/icons/${icons[name] || "javascript"}.svg)`,
-        }}
+        width={20}
+        height={20}
       />
       {label && <span>{name}</span>}
     </span>

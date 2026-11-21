@@ -20,7 +20,7 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Del catálogo al inventario: una plataforma de comercio electrónico para conectar la tienda con su operación diaria.",
-    image: "/projects/ferremax.webp",
+    image: "/projects/ferremax-cover.webp",
     imageAlt:
       "Captura real de la tienda FerreMax con catálogo de herramientas y navegación por categorías",
     technologies: [

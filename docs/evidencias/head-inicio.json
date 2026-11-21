@@ -1,0 +1,94 @@
+{
+  "canonical": "http://localhost:3000",
+  "meta": [
+    {
+      "content": null,
+      "name": null
+    },
+    {
+      "content": "width=device-width, initial-scale=1",
+      "name": "viewport"
+    },
+    {
+      "content": "Estudiante de Diseño y Desarrollo de Software en Tecsup. Desarrollo aplicaciones web y móviles con React, TypeScript, Node.js y Kotlin en Lima, Perú.",
+      "name": "description"
+    },
+    {
+      "content": "Portafolio de Luis Dionicio",
+      "name": "application-name"
+    },
+    {
+      "content": "Luis Angel Dionicio Bartolo",
+      "name": "author"
+    },
+    {
+      "content": "Luis Angel Dionicio Bartolo",
+      "name": "creator"
+    },
+    {
+      "content": "index, follow",
+      "name": "robots"
+    },
+    {
+      "content": "technology",
+      "name": "category"
+    },
+    {
+      "content": "Luis Dionicio — Desarrollador Full Stack en Lima | Luis Dionicio",
+      "name": "og:title"
+    },
+    {
+      "content": "Estudiante de Diseño y Desarrollo de Software en Tecsup. Desarrollo aplicaciones web y móviles con React, TypeScript, Node.js y Kotlin en Lima, Perú.",
+      "name": "og:description"
+    },
+    {
+      "content": "http://localhost:3000",
+      "name": "og:url"
+    },
+    {
+      "content": "Luis Dionicio",
+      "name": "og:site_name"
+    },
+    {
+      "content": "es_PE",
+      "name": "og:locale"
+    },
+    {
+      "content": "http://localhost:3000/opengraph-image",
+      "name": "og:image"
+    },
+    {
+      "content": "1200",
+      "name": "og:image:width"
+    },
+    {
+      "content": "630",
+      "name": "og:image:height"
+    },
+    {
+      "content": "Luis Dionicio — Desarrollo web y móvil",
+      "name": "og:image:alt"
+    },
+    {
+      "content": "website",
+      "name": "og:type"
+    },
+    {
+      "content": "summary_large_image",
+      "name": "twitter:card"
+    },
+    {
+      "content": "Luis Dionicio — Desarrollador Full Stack en Lima | Luis Dionicio",
+      "name": "twitter:title"
+    },
+    {
+      "content": "Estudiante de Diseño y Desarrollo de Software en Tecsup. Desarrollo aplicaciones web y móviles con React, TypeScript, Node.js y Kotlin en Lima, Perú.",
+      "name": "twitter:description"
+    },
+    {
+      "content": "http://localhost:3000/opengraph-image",
+      "name": "twitter:image"
+    }
+  ],
+  "title": "Luis Dionicio — Desarrollador Full Stack en Lima"
+}

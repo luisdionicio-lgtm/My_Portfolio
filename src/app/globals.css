@@ -1740,3 +1740,12 @@ h2 > span,
     height: 160px;
   }
 }
+.tech-icon {
+  background: transparent;
+  object-fit: contain;
+}
+.icon-neutral {
+  background: #f1f3e9;
+  border-radius: 3px;
+  padding: 1px;
+}

@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-11-21T16:11:02.353Z",
+  "origin": "http://localhost:3000",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Luis Dionicio — Desarrollador Full Stack en Lima",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects",
+      "status": 200,
+      "title": "Proyectos de software | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "title": "Sobre mí | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/ferremax",
+      "status": 200,
+      "title": "FerreMax — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/factora",
+      "status": 200,
+      "title": "Factora — Backend | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/aforo-iot",
+      "status": 200,
+      "title": "Aforo IoT — IoT | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/cookplan",
+      "status": 200,
+      "title": "CookPlan — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/celumarket",
+      "status": 200,
+      "title": "CeluMarket — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    }
+  ],
+  "sitemapUrls": 8,
+  "robots": "OK",
+  "missingProject": 404,
+  "excludedContact": 404,
+  "openGraphImage": "OK",
+  "optimizedProfile": "image/avif"
+}

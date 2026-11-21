@@ -1,0 +1,98 @@
+[
+  {
+    "page": "inicio",
+    "path": "/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:08:58.849Z"
+  },
+  {
+    "page": "inicio",
+    "path": "/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:08.617Z"
+  },
+  {
+    "page": "proyectos",
+    "path": "/projects",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:18.449Z"
+  },
+  {
+    "page": "proyectos",
+    "path": "/projects",
+    "mode": "mobile",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:28.247Z"
+  },
+  {
+    "page": "detalle",
+    "path": "/projects/ferremax",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:38.020Z"
+  },
+  {
+    "page": "detalle",
+    "path": "/projects/ferremax",
+    "mode": "mobile",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:47.732Z"
+  },
+  {
+    "page": "perfil",
+    "path": "/about",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:09:57.394Z"
+  },
+  {
+    "page": "perfil",
+    "path": "/about",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T16:10:07.132Z"
+  }
+]
