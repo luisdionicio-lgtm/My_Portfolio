@@ -2,6 +2,9 @@
   "name": "my-portafolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "26.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +15,7 @@
     "audit:desktop": "lighthouse http://localhost:3000 --preset=desktop --output=html --output=json --output-path=docs/evidencias/lighthouse-desktop --chrome-flags=\"--headless=new\"",
     "audit:mobile": "lighthouse http://localhost:3000 --output=html --output=json --output-path=docs/evidencias/lighthouse-mobile --chrome-flags=\"--headless=new\"",
     "check:seo": "node scripts/check-seo.mjs",
+    "check:origin": "node --test scripts/site-origin.test.mjs",
     "audit:all": "node scripts/audit-all.mjs",
     "format": "prettier --write src scripts next.config.ts"
   },

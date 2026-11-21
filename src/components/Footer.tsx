@@ -10,6 +10,7 @@ export function Footer() {
         <p>Ideas claras. Código con intención.</p>
       </div>
       <div className="footer-links">
+        <Link href="/contact">Contacto</Link>
         <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>

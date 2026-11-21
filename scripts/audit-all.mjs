@@ -5,14 +5,16 @@ const pages = [
   ["proyectos", "/projects"],
   ["detalle", "/projects/ferremax"],
   ["perfil", "/about"],
+  ["contacto", "/contact"],
 ];
+const origin = process.env.AUDIT_BASE_URL || "http://localhost:3000";
 const summary = [];
 for (const [name, path] of pages) {
   for (const mode of ["desktop", "mobile"]) {
     const base = `docs/evidencias/lighthouse-${name}-${mode}`;
     const args = [
       "node_modules/lighthouse/cli/index.js",
-      `http://localhost:3000${path}`,
+      `${origin}${path}`,
       "--output=html",
       "--output=json",
       `--output-path=${base}`,

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { personalInfo } from "@/lib/data";
-import { siteUrl, pageMetadata } from "@/lib/seo";
+import { siteUrl, pageMetadata, isPreviewDeployment } from "@/lib/seo";
 import "./globals.css";
 export const metadata: Metadata = {
   ...pageMetadata(
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   authors: [{ name: personalInfo.name, url: personalInfo.linkedin }],
   creator: personalInfo.name,
   category: "technology",
-  robots: { index: true, follow: true },
+  robots: { index: !isPreviewDeployment, follow: !isPreviewDeployment },
 };
 export default function RootLayout({
   children,

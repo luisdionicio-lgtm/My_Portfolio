@@ -185,14 +185,9 @@ export default function Home() {
           <br />
           puede empezar con un <em>hola.</em>
         </h2>
-        <a
-          className="button primary"
-          href={personalInfo.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Conectar en LinkedIn
-        </a>
+        <Link className="button primary" href="/contact">
+          Hablemos de tu idea
+        </Link>
         <span className="connect-art" aria-hidden="true">
           ✳
         </span>

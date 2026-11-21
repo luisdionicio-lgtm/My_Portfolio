@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { personalInfo } from "./data";
-// No se inventa un dominio público: usar el origen local hasta configurar uno real.
-export const siteUrl = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-).origin;
+import { resolveSiteUrl } from "./site-origin";
+export const siteUrl = resolveSiteUrl(process.env);
+export const isPreviewDeployment = process.env.VERCEL_ENV === "preview";
 export function pageMetadata(
   title: string,
   description: string,

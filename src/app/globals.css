@@ -2585,3 +2585,158 @@ body {
   border-radius: 50%;
   padding: 1px;
 }
+
+/* Contacto comparte la paleta adaptativa y la tipografía editorial del perfil. */
+.contact-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 80px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  align-items: start;
+}
+.contact-page .page-title {
+  font-size: clamp(48px, 5.2vw, 72px);
+  line-height: 1.1;
+}
+.contact-page .page-description {
+  font-size: 17px;
+  margin-bottom: 28px;
+  max-width: 520px;
+}
+.contact-primary {
+  gap: 12px;
+  font-size: 16px;
+  padding: 15px 24px;
+}
+.contact-hint {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 400px;
+  margin-top: 16px;
+}
+.contact-topics {
+  margin-top: 56px;
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+.contact-topics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-topics li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 16px;
+}
+.contact-profile {
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+.contact-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+  object-position: center 30%;
+  margin-bottom: 28px;
+}
+.contact-profile h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+.contact-role {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+.contact-fact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.contact-fact svg {
+  flex-shrink: 0;
+  color: var(--accent);
+}
+.contact-channels {
+  margin: 26px 0;
+  border-top: 1px solid var(--border);
+}
+.contact-channels a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.contact-channels a > svg,
+.contact-channels a > img {
+  flex-shrink: 0;
+}
+.contact-channels strong,
+.contact-channels span span {
+  display: block;
+}
+.contact-channels strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-channels span span {
+  font-size: 14px;
+  color: var(--muted);
+}
+.contact-channels a:hover strong {
+  color: var(--accent);
+}
+.footer-links {
+  flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  .contact-page {
+    gap: 36px;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 98px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    gap: 16px 20px;
+  }
+  .header nav {
+    gap: 22px;
+  }
+}
+@media (max-width: 700px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    padding-top: 48px;
+    gap: 40px;
+  }
+  .contact-page .page-title {
+    font-size: clamp(38px, 7.6vw, 54px);
+    letter-spacing: -1.6px;
+  }
+  .contact-profile {
+    padding: 24px;
+  }
+  .contact-topics {
+    margin-top: 36px;
+  }
+}
+@media (max-width: 520px) {
+  .header nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

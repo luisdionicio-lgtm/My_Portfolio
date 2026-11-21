@@ -19,6 +19,7 @@ export function Header() {
             ["/", "Inicio"],
             ["/projects", "Proyectos"],
             ["/about", "Sobre mí"],
+            ["/contact", "Contacto"],
           ].map(([url, label]) => (
             <Link
               key={url}

@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 const origin = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const baseUrl = process.env.CHECK_BASE_URL || origin;
+const evidenceDir = process.env.EVIDENCE_DIR || "docs/evidencias";
 const routes = [
   "/",
   "/projects",
   "/about",
+  "/contact",
   "/projects/ferremax",
   "/projects/factora",
   "/projects/aforo-iot",
@@ -21,7 +24,7 @@ const routes = [
 const results = [];
 const titles = new Set();
 for (const path of routes) {
-  const response = await fetch(`${origin}${path}`);
+  const response = await fetch(`${baseUrl}${path}`);
   assert.equal(response.status, 200, path);
   const html = await response.text();
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
@@ -58,7 +61,7 @@ for (const path of routes) {
     ],
   });
 }
-const sitemapResponse = await fetch(`${origin}/sitemap.xml`);
+const sitemapResponse = await fetch(`${baseUrl}/sitemap.xml`);
 assert.equal(sitemapResponse.status, 200);
 const sitemap = await sitemapResponse.text();
 for (const path of routes)
@@ -67,34 +70,41 @@ for (const path of routes)
     `Sitemap ${path}`,
   );
 assert.equal((sitemap.match(/<loc>/g) || []).length, routes.length);
-const robotsResponse = await fetch(`${origin}/robots.txt`);
+const robotsResponse = await fetch(`${baseUrl}/robots.txt`);
 assert.equal(robotsResponse.status, 200);
 const robots = await robotsResponse.text();
 assert.ok(robots.includes("Allow: /"));
 assert.ok(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
-assert.equal((await fetch(`${origin}/projects/no-existe`)).status, 404);
-assert.equal((await fetch(`${origin}/contact`)).status, 404);
-const og = await fetch(`${origin}/opengraph-image`);
+assert.equal((await fetch(`${baseUrl}/projects/no-existe`)).status, 404);
+const contactHtml = await (await fetch(`${baseUrl}/contact`)).text();
+assert.ok(
+  contactHtml.includes(
+    "https://www.linkedin.com/in/luis-angel-dionicio-bartolo-988b26445/",
+  ),
+);
+assert.ok(contactHtml.includes("Hablemos en LinkedIn"));
+const og = await fetch(`${baseUrl}/opengraph-image`);
 assert.equal(og.status, 200);
 assert.ok(og.headers.get("content-type").includes("image/png"));
 const optimized = await fetch(
-  `${origin}/_next/image?url=%2Fprofile-original.webp&w=256&q=75`,
+  `${baseUrl}/_next/image?url=%2Fprofile-original.webp&w=256&q=75`,
   { headers: { Accept: "image/avif,image/webp" } },
 );
 assert.equal(optimized.status, 200);
 assert.match(optimized.headers.get("content-type"), /^image\/(avif|webp)$/);
-await mkdir("docs/evidencias", { recursive: true });
+await mkdir(evidenceDir, { recursive: true });
 await writeFile(
-  "docs/evidencias/seo-check.json",
+  `${evidenceDir}/seo-check.json`,
   JSON.stringify(
     {
       checkedAt: new Date().toISOString(),
       origin,
+      baseUrl,
       results,
       sitemapUrls: routes.length,
       robots: "OK",
       missingProject: 404,
-      excludedContact: 404,
+      contact: 200,
       openGraphImage: "OK",
       optimizedProfile: optimized.headers.get("content-type"),
     },
@@ -102,8 +112,8 @@ await writeFile(
     2,
   ),
 );
-await writeFile("docs/evidencias/sitemap.xml", sitemap);
-await writeFile("docs/evidencias/robots.txt", robots);
+await writeFile(`${evidenceDir}/sitemap.xml`, sitemap);
+await writeFile(`${evidenceDir}/robots.txt`, robots);
 console.log(
   `SEO verificado: ${routes.length} rutas, metadatos, sitemap, robots, imagen OG, AVIF/WebP y respuestas 404.`,
 );
