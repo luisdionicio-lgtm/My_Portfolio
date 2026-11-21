@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return <section className="shell page-section"><p className="eyebrow accent">404 · RUTA NO ENCONTRADA</p><h1 className="page-title">Esta idea aún<br />no está aquí<span>.</span></h1><p className="page-description">La página que buscas no existe. Puedes seguir explorando mis proyectos.</p><Link href="/projects" className="button primary">Volver a proyectos</Link></section>; }

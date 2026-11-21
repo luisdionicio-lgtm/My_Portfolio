@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "assets": "node scripts/generate-art.mjs",
+    "audit:desktop": "lighthouse http://localhost:3000 --preset=desktop --output=html --output=json --output-path=docs/evidencias/lighthouse-desktop --chrome-flags=\"--headless=new\"",
+    "audit:mobile": "lighthouse http://localhost:3000 --output=html --output=json --output-path=docs/evidencias/lighthouse-mobile --chrome-flags=\"--headless=new\""
   },
   "dependencies": {
     "next": "16.4.6",
@@ -20,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "lighthouse": "^13.6.0",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   }

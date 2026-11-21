@@ -1,69 +1,10 @@
-import Image from "next/image";
-
+import Link from 'next/link';
+import { ProjectCard } from '@/components/ProjectCard';
+import { TechIcon } from '@/components/TechIcon';
+import { personalInfo, projects } from '@/lib/data';
+import { pageMetadata, siteUrl } from '@/lib/seo';
+export const metadata = pageMetadata('Desarrollador Full Stack en Lima', personalInfo.description, '/');
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+  const person = { '@context': 'https://schema.org', '@type': 'Person', name: personalInfo.name, url: siteUrl, sameAs: [personalInfo.github, personalInfo.linkedin], description: personalInfo.description, alumniOf: { '@type': 'EducationalOrganization', name: 'Tecsup' }, knowsAbout: ['React', 'TypeScript', 'Node.js', 'Kotlin', 'Desarrollo web'] };
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replace(/</g, '\\u003c') }} /><section className="hero shell"><div className="hero-copy"><div className="availability"><span /> Disponible para prácticas preprofesionales</div><p className="eyebrow hero-intro">HOLA, SOY LUIS DIONICIO</p><h1>De una idea<br />a algo que<br /><em>sí funciona.</em></h1><p className="hero-description">Desarrollo experiencias web y móviles.<br />Me gusta conectar un buen diseño con la lógica que lo hace posible.</p><div className="actions"><Link className="button primary" href="/projects">Explorar mis proyectos</Link><Link className="button secondary" href="/about">Conoce mi historia</Link></div><div className="hero-location"><span aria-hidden="true">⌖</span> Lima, Perú <span className="divider">/</span> Full Stack & Mobile</div></div><div className="workspace" aria-label="Ilustración de mi espacio de desarrollo"><div className="workspace-top"><span className="window-dots"><i /><i /><i /></span><span>mi-espacio / perfil.ts</span><span>TS</span></div><div className="workspace-code"><div className="code-comment">{"// Siempre hay algo nuevo por construir."}</div><div><span className="code-purple">const</span> developer = {'{'}</div><div className="indent">nombre: <span className="code-green">&apos;Luis Dionicio&apos;</span>,</div><div className="indent">enfoque: [<span className="code-green">&apos;web&apos;</span>, <span className="code-green">&apos;mobile&apos;</span>],</div><div className="indent">formación: <span className="code-green">&apos;Tecsup&apos;</span>,</div><div className="indent">mentalidad: <span className="code-green">&apos;seguir aprendiendo&apos;</span></div><div>{'};'}</div><div className="code-last">build(<span className="code-green">ideas</span>).with(<span className="code-purple">intención</span>);</div></div><div className="workspace-bottom"><span className="code-green">✓</span> Curiosidad compilada. Listo para crear.</div><div className="floating-badge badge-react"><TechIcon name="React" /></div><div className="floating-badge badge-node"><TechIcon name="Node.js" /></div><div className="workspace-note"><span className="spark" aria-hidden="true">✳</span><div>Del frontend al backend.<br /><strong>El detalle importa.</strong></div></div></div></section><div className="stack-strip"><div className="shell"><span className="eyebrow">MI STACK PRINCIPAL</span><div>{['React', 'TypeScript', 'Node.js', 'Java', 'Kotlin', 'PostgreSQL'].map(name => <TechIcon name={name} key={name} />)}</div></div></div><section className="section shell"><div className="section-heading"><div><p className="eyebrow accent">CÓDIGO QUE SE CONVIERTE EN EXPERIENCIAS</p><h2>Una selección de<br />lo que construyo<span>.</span></h2></div><Link className="text-link" href="/projects">Ver todos los proyectos <span className="count">{projects.length}</span></Link></div><div className="project-grid">{projects.filter(project => project.featured).map((project, index) => <ProjectCard project={project} index={index} key={project.slug} />)}</div></section><section className="about-teaser shell"><div><p className="eyebrow accent">LA PERSONA DETRÁS DEL CÓDIGO</p><h2>Aprender. Construir.<br /><em>Volver a intentarlo.</em></h2></div><div><p>Soy estudiante de Diseño y Desarrollo de Software en Tecsup y beneficiario de Beca 18. Mi experiencia nace de proyectos académicos, de portafolio y del desarrollo de una plataforma para Jhon Tours Perú.</p><Link className="text-link" href="/about">Más sobre mi recorrido</Link></div></section><section className="connect shell"><span className="eyebrow">SIGAMOS CONECTADOS</span><h2>La próxima idea<br />puede empezar con un <em>hola.</em></h2><a className="button primary" href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">Conectar en LinkedIn</a><span className="connect-art" aria-hidden="true">✳</span></section></>;
 }
