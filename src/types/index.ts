@@ -1,7 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
-  category: 'Full Stack' | 'Backend' | 'IoT' | 'Mobile';
+  category: "Full Stack" | "Backend" | "IoT" | "Mobile";
   description: string;
   image: string;
   imageAlt: string;
