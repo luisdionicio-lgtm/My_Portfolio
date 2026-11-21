@@ -2,6 +2,8 @@
 
 Luis Angel Dionicio Bartolo · Diseño y Desarrollo de Software · Tecsup
 
+[Word completado con evidencias](entrega/GLAB-S14-LUIS-DIONICIO-EVIDENCIAS.docx) · [Índice de páginas y capturas](entrega/README.md). El Word incluye las quince páginas completas del portafolio, inicio móvil, sitemap, robots, metadatos, auditorías y conclusiones.
+
 Se desarrolló un portafolio personal con Next.js, información profesional verificada en LinkedIn, fotografía original de perfil, iconos locales y temas adaptativos, con estética editorial en grafito y dorado. [Dirección visual y referencias](DISENO.md). El portafolio incluye doce proyectos de GitHub y seis destacados en la portada. [Fuentes y alcance](PROYECTOS.md). El trabajo cubre las partes 1 a 6 del procedimiento. La sección TAREA se excluyó por indicación del estudiante; no hay página de contacto, dominio personalizado ni despliegue.
 
 ## Parte 1 Meta tags dinámicos
@@ -26,7 +28,7 @@ El diseño del perfil presenta el nombre, la especialidad, la foto de LinkedIn, 
 
 Las tarjetas y la ilustración de la página de perfil usan `loading="lazy"`. Las imágenes principales de cada página usan precarga. Los atributos `width`, `height` y `sizes` reservan espacio y permiten elegir recursos según la pantalla. La foto de perfil tiene una versión WebP local. La prueba HTTP confirma la respuesta optimizada en AVIF o WebP.
 
-FerreMax utiliza una captura real recortada de su repositorio para mejorar la lectura en tarjetas. EduControl 360, LASJIJAS y Archivos mágicos también utilizan capturas reales. Las portadas restantes son ilustraciones conceptuales identificadas en el texto alternativo y en los detalles. No se presentan como capturas reales.
+FerreMax utiliza una captura real recortada de su repositorio para mejorar la lectura en tarjetas. EduControl 360, LASJIJAS y Archivos mágicos también utilizan capturas reales. CeluMarket, El Refugio y MediGuard muestran las capturas proporcionadas por Luis; G&M Campo usa la captura de la plataforma web relacionada G&M Melacampos con una leyenda explicativa. Las cuatro portadas restantes son ilustraciones conceptuales identificadas en el texto alternativo y en los detalles. No se presentan como capturas reales.
 
 ### Evidencias de las páginas
 
@@ -100,4 +102,4 @@ Se comprobó en Chrome que el filtro Mobile devuelve CookPlan, G&M Campo, MediGu
 [Perfil profesional de LinkedIn](https://www.linkedin.com/in/luis-angel-dionicio-bartolo-988b26445/) · [Metadata API](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) · [next/image](https://nextjs.org/docs/app/api-reference/components/image) · [Sitemap](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap) · [Robots](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots)
 
 
-Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.
+Actualización visual: iconos oficiales con insignias y colores por tecnología, ocho portadas con capturas y cuatro ilustraciones conceptuales identificadas.

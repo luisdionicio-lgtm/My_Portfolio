@@ -64,20 +64,22 @@ El origen SEO se configura con `NEXT_PUBLIC_SITE_URL` en `.env.local`, siguiendo
 
 ## Evidencias y laboratorio
 
+- [Word completado con capturas completas y evidencias de las partes 1 a 6](docs/entrega/GLAB-S14-LUIS-DIONICIO-EVIDENCIAS.docx).
+- [Índice de evidencias y páginas del Word](docs/entrega/README.md).
 - [Dirección visual y referencias](docs/DISENO.md).
 - [Desarrollo, verificación y cinco conclusiones](docs/LABORATORIO_14.md).
 - [Fuentes y alcance de los doce proyectos](docs/PROYECTOS.md).
 - [Resultados de Lighthouse](docs/evidencias/lighthouse-summary.json).
 - [Comprobación automática de SEO](docs/evidencias/seo-check.json).
-- Capturas de las páginas y de los archivos SEO en `docs/evidencias/`.
+- [Capturas completas actuales de todas las páginas y archivos SEO](docs/evidencias/completas/).
 
 ## Fuentes y recursos
 
 Información profesional y fotografía obtenidas del [perfil de LinkedIn de Luis Angel Dionicio Bartolo](https://www.linkedin.com/in/luis-angel-dionicio-bartolo-988b26445/), revisado el 21 de noviembre de 2026. Los proyectos se identifican como académicos o de demostración local y conservan sus límites reales.
 
-La imagen de FerreMax es una [captura real de su repositorio](https://github.com/luisdionicio-lgtm/E-commerce-Ferreteria/blob/main/docs/previews/07-next-tienda.png). EduControl 360, LASJIJAS y Archivos mágicos también usan capturas reales de sus repositorios. Las portadas restantes son ilustraciones conceptuales propias, identificadas como tales. `npm run assets` las regenera. Iconos de [Devicon](https://github.com/devicons/devicon), versión 2.17.0; licencia incluida en `public/icons/LICENSE`. Las marcas pertenecen a sus respectivos titulares.
+La imagen de FerreMax es una [captura real de su repositorio](https://github.com/luisdionicio-lgtm/E-commerce-Ferreteria/blob/main/docs/previews/07-next-tienda.png). EduControl 360, LASJIJAS y Archivos mágicos también usan capturas reales de sus repositorios. CeluMarket, El Refugio y MediGuard usan las capturas proporcionadas por Luis; G&M Campo muestra la plataforma web relacionada G&M Melacampos, con una leyenda que lo aclara. Las cuatro portadas restantes son ilustraciones conceptuales propias, identificadas como tales. `npm run assets` regenera las ilustraciones. Iconos de [Devicon](https://github.com/devicons/devicon), versión 2.17.0; licencia incluida en `public/icons/LICENSE`. Las marcas pertenecen a sus respectivos titulares.
 
 Referencias técnicas: [Metadata API](https://nextjs.org/docs/app/api-reference/functions/generate-metadata), [next/image](https://nextjs.org/docs/app/api-reference/components/image), [sitemap](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap) y [robots](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots).
 
 
-Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.
+Actualización visual: iconos oficiales con insignias y colores por tecnología, ocho portadas con capturas y cuatro ilustraciones conceptuales identificadas.
