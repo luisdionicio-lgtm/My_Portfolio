@@ -1,8 +1,8 @@
 # Luis Dionicio — Portafolio personal
 
-Portafolio de Luis Angel Dionicio Bartolo, estudiante de Diseño y Desarrollo de Software en Tecsup, con información y fotografía de su perfil de LinkedIn. Desarrollo del laboratorio 14 de Optimización y SEO, partes 1 a 6, más la página de contacto de la TAREA y la configuración para Vercel. El dominio personalizado y las capturas finales de la TAREA se completarán cuando Luis proporcione el dominio. [Estado de la TAREA y despliegue](docs/TAREA.md).
+Portafolio de Luis Angel Dionicio Bartolo, estudiante de Diseño y Desarrollo de Software en Tecsup, con información y fotografía de su perfil de LinkedIn. Desarrollo del laboratorio 14 de Optimización y SEO, partes 1 a 6, más contacto, despliegue en Vercel y dominio DuckDNS de la TAREA. [Estado de la TAREA y despliegue](docs/TAREA.md).
 
-[Ver el portafolio en Vercel](https://luis-dionicio-portfolio.vercel.app) · [Contacto](https://luis-dionicio-portfolio.vercel.app/contact).
+[Ver el portafolio con DuckDNS](https://luis-dionicio.duckdns.org) · [Contacto](https://luis-dionicio.duckdns.org/contact) · [Dirección de Vercel](https://luis-dionicio-portfolio.vercel.app).
 
 ## Ejecutar
 
