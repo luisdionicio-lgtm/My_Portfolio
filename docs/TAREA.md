@@ -2,6 +2,12 @@
 
 La continuación incorpora la página de contacto y prepara la aplicación para Vercel. Luis autorizó publicar primero con el subdominio de Vercel; proporcionará después el dominio personalizado para las capturas definitivas y la actualización del Word.
 
+## Publicación en Vercel
+
+[Sitio público](https://luis-dionicio-portfolio.vercel.app) · [Contacto](https://luis-dionicio-portfolio.vercel.app/contact) · [Proyecto en Vercel](https://vercel.com/luis-projects-afa44a82/luis-dionicio-portfolio).
+
+El proyecto se creó en el equipo Luis' projects desde la rama `main` de GitHub. Vercel confirmó el primer despliegue en Production. Se configuraron las variables de producción `CONTACT_EMAIL` con el correo indicado por Luis y `NEXT_PUBLIC_SITE_URL` con el origen público de Vercel. El dominio personalizado sigue pendiente.
+
 ## Implementación
 
 - `/contact` presenta un formulario con nombre, correo, asunto y mensaje, además del perfil, la foto original, intereses profesionales y enlaces reales a LinkedIn y GitHub.

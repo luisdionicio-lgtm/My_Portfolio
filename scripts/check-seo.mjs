@@ -83,6 +83,26 @@ assert.ok(
   ),
 );
 assert.ok(contactHtml.includes("Hablemos en LinkedIn"));
+for (const id of [
+  "contact-name",
+  "contact-email",
+  "contact-subject",
+  "contact-message",
+])
+  assert.ok(contactHtml.includes(`id="${id}"`), `Campo de contacto: ${id}`);
+if (process.env.EXPECTED_CONTACT_EMAIL) {
+  assert.ok(
+    contactHtml.includes(
+      `action="https://formsubmit.co/${process.env.EXPECTED_CONTACT_EMAIL}"`,
+    ),
+    "Correo receptor del formulario configurado",
+  );
+  assert.match(contactHtml, /method="POST"/i);
+  assert.ok(
+    !contactHtml.includes("El formulario estará disponible cuando"),
+    "Envío habilitado",
+  );
+}
 const og = await fetch(`${baseUrl}/opengraph-image`);
 assert.equal(og.status, 200);
 assert.ok(og.headers.get("content-type").includes("image/png"));
@@ -105,6 +125,9 @@ await writeFile(
       robots: "OK",
       missingProject: 404,
       contact: 200,
+      contactForm: process.env.EXPECTED_CONTACT_EMAIL
+        ? "Campos y destino verificados; entrega de correo pendiente de activación y prueba"
+        : "Campos verificados",
       openGraphImage: "OK",
       optimizedProfile: optimized.headers.get("content-type"),
     },
