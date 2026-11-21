@@ -29,6 +29,10 @@ const names = [
   "flutter",
   "git",
   "amazonwebservices",
+  "dart",
+  "nestjs",
+  "redis",
+  "supabase",
 ];
 for (const name of names) {
   const response = await fetch(

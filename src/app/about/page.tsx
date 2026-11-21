@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="about-story">
           <Image
             className="about-photo"
-            src="/profile.webp"
+            src="/profile-original.webp"
             alt="Luis Angel Dionicio Bartolo, foto de su perfil de LinkedIn"
             width={400}
             height={400}

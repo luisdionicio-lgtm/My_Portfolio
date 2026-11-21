@@ -17,7 +17,7 @@ export default function Home() {
     url: siteUrl,
     sameAs: [personalInfo.github, personalInfo.linkedin],
     description: personalInfo.description,
-    image: `${siteUrl}/profile.webp`,
+    image: `${siteUrl}/profile-original.webp`,
     affiliation: { "@type": "EducationalOrganization", name: "Tecsup" },
     knowsAbout: ["React", "TypeScript", "Node.js", "Kotlin", "Desarrollo web"],
   };
@@ -59,50 +59,60 @@ export default function Home() {
             <span aria-hidden="true">⌖</span> Lima, Perú{" "}
             <span className="divider">/</span> Full Stack & Mobile
           </div>
+          <div className="hero-summary">
+            <div>
+              <strong>{projects.length.toString().padStart(2, "0")}</strong>
+              <span>Proyectos de software</span>
+            </div>
+            <div>
+              <strong>Web & Mobile</strong>
+              <span>Mi enfoque de desarrollo</span>
+            </div>
+          </div>
         </div>
         <aside
           className="profile-card"
           aria-label="Perfil profesional de Luis Dionicio"
         >
-          <div className="profile-cover">
-            <span>FULL STACK / MOBILE / IDEAS</span>
-            <span aria-hidden="true">✳</span>
-          </div>
-          <div className="profile-card-body">
+          <div className="portrait-frame">
             <Image
               className="profile-photo"
-              src="/profile.webp"
-              alt="Foto de perfil de Luis Angel Dionicio Bartolo tomada de su LinkedIn"
-              width={400}
-              height={400}
-              sizes="(max-width: 520px) 180px, 220px"
+              src="/profile-original.webp"
+              alt="Retrato original de Luis Angel Dionicio Bartolo, de su perfil de LinkedIn"
+              width={900}
+              height={900}
+              sizes="(max-width: 800px) 90vw, 460px"
               preload
             />
-            <p className="profile-handle">@luisdionicio-lgtm</p>
-            <h2>Luis Dionicio</h2>
-            <p className="profile-role">Desarrollo web & móvil</p>
-            <div className="profile-facts">
-              <span>Tecsup · Software</span>
-              <span>Lima, Perú</span>
-              <span>Beca 18 · PRONABEC</span>
+            <div className="portrait-topline">
+              <span>LIMA, PERÚ</span>
+              <span>DESARROLLO DE SOFTWARE</span>
             </div>
-            <div className="profile-stack">
-              {["React", "TypeScript", "Node.js", "Kotlin"].map((name) => (
-                <TechIcon name={name} key={name} />
-              ))}
+            <div className="portrait-caption">
+              <span className="eyebrow">DEL CONCEPTO AL CÓDIGO</span>
+              <h2>
+                Luis Dionicio<span>.</span>
+              </h2>
+              <p>Tecsup · Full Stack & Mobile</p>
+              <div className="profile-stack">
+                {["React", "TypeScript", "Node.js", "Kotlin"].map((name) => (
+                  <TechIcon name={name} key={name} />
+                ))}
+              </div>
             </div>
-            <a
-              className="profile-social"
-              href={personalInfo.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="linkedin-icon" aria-hidden="true">
-                in
-              </span>{" "}
-              Mi perfil en LinkedIn
-            </a>
+            <span className="portrait-corner" aria-hidden="true" />
           </div>
+          <a
+            className="profile-social"
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="linkedin-icon" aria-hidden="true">
+              in
+            </span>{" "}
+            Mi perfil profesional en LinkedIn
+          </a>
         </aside>
       </section>
       <div className="stack-strip">

@@ -2,7 +2,7 @@
 
 Luis Angel Dionicio Bartolo · Diseño y Desarrollo de Software · Tecsup
 
-Se desarrolló un portafolio personal con Next.js, información profesional verificada en LinkedIn, fotografía de perfil, iconos locales y temas adaptativos. El trabajo cubre las partes 1 a 6 del procedimiento. La sección TAREA se excluyó por indicación del estudiante; no hay página de contacto, dominio personalizado ni despliegue.
+Se desarrolló un portafolio personal con Next.js, información profesional verificada en LinkedIn, fotografía original de perfil, iconos locales y temas adaptativos, con estética editorial en grafito y dorado. [Dirección visual y referencias](DISENO.md). El portafolio incluye doce proyectos de GitHub y seis destacados en la portada. [Fuentes y alcance](PROYECTOS.md). El trabajo cubre las partes 1 a 6 del procedimiento. La sección TAREA se excluyó por indicación del estudiante; no hay página de contacto, dominio personalizado ni despliegue.
 
 ## Parte 1 Meta tags dinámicos
 
@@ -12,7 +12,7 @@ Las páginas de inicio, proyectos y perfil tienen títulos y descripciones propi
 
 Se usan proyectos reales en lugar de los ejemplos ficticios de la guía. Por ello, la ruta de demostración `/projects/ecommerce-platform` se reemplaza por `/projects/ferremax`.
 
-La inspección de etiquetas del documento se registra en [head-inicio.json](evidencias/head-inicio.json), y la comprobación de las ocho rutas en [seo-check.json](evidencias/seo-check.json). La página principal tiene JSON-LD de persona y los detalles de proyecto tienen `SoftwareSourceCode`. Se genera una imagen social de 1200 × 630 con `next/og`.
+La inspección de etiquetas del documento se registra en [head-inicio.json](evidencias/head-inicio.json), y la comprobación de las quince rutas en [seo-check.json](evidencias/seo-check.json). La página principal tiene JSON-LD de persona y los detalles de proyecto tienen `SoftwareSourceCode`. Se genera una imagen social de 1200 × 630 con `next/og`.
 
 ## Parte 2 Componentes compartidos
 
@@ -42,7 +42,7 @@ FerreMax utiliza una captura real recortada de su repositorio para mejorar la le
 
 ## Parte 4 Sitemap dinámico
 
-`src/app/sitemap.ts` crea `/sitemap.xml` desde las páginas principales y el arreglo de proyectos. Contiene ocho URLs: inicio, listado, perfil y los cinco detalles. Añadir un proyecto al arreglo incorpora su URL al sitemap en la siguiente compilación.
+`src/app/sitemap.ts` crea `/sitemap.xml` desde las páginas principales y el arreglo de proyectos. Contiene quince URLs: inicio, listado, perfil y los doce detalles. Añadir un proyecto al arreglo incorpora su URL al sitemap en la siguiente compilación.
 
 El origen se obtiene de `NEXT_PUBLIC_SITE_URL`; se utiliza `http://localhost:3000` durante el laboratorio. No se declara un dominio ficticio ni se afirma que estas URLs locales estén indexadas por buscadores.
 
@@ -81,9 +81,9 @@ Todas las puntuaciones superan 90. [Resumen JSON](evidencias/lighthouse-summary.
 
 ## Pruebas funcionales y visuales
 
-Se comprobó en Chrome que el filtro Mobile devuelve CookPlan y que IoT devuelve Aforo IoT. Se verificó la navegación desde el catálogo hacia el detalle y los enlaces internos entre proyectos. Los temas claro y oscuro cambian la paleta, la preferencia se conserva al navegar y la opción Sistema restaura la adaptación automática. Se revisó el diseño móvil y la carga de la fotografía e imágenes.
+Se comprobó en Chrome que el filtro Mobile devuelve CookPlan, G&M Campo, MediGuard AI y Sabor Andino, y que IoT devuelve Aforo IoT. Se verificó la navegación desde el catálogo hacia el detalle y los enlaces internos entre proyectos. Los temas claro y oscuro cambian la paleta, la preferencia se conserva al navegar y la opción Sistema restaura la adaptación automática. Se revisó el diseño móvil y la carga de la fotografía e imágenes.
 
-`npm run lint`, `npm run build`, `npm run typecheck` y `npm run check:seo` completaron correctamente. La compilación genera estáticamente las páginas principales y los cinco detalles.
+`npm run lint`, `npm run build`, `npm run typecheck` y `npm run check:seo` completaron correctamente. La compilación genera estáticamente las páginas principales y los doce detalles.
 
 ## Cinco conclusiones
 

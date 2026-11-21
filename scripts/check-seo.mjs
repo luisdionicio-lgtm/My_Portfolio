@@ -10,6 +10,13 @@ const routes = [
   "/projects/aforo-iot",
   "/projects/cookplan",
   "/projects/celumarket",
+  "/projects/educontrol-360",
+  "/projects/gm-campo",
+  "/projects/lasjijas",
+  "/projects/mediguard",
+  "/projects/sabor-andino",
+  "/projects/el-refugio",
+  "/projects/archivos-magicos",
 ];
 const results = [];
 const titles = new Set();
@@ -71,7 +78,7 @@ const og = await fetch(`${origin}/opengraph-image`);
 assert.equal(og.status, 200);
 assert.ok(og.headers.get("content-type").includes("image/png"));
 const optimized = await fetch(
-  `${origin}/_next/image?url=%2Fprofile.webp&w=256&q=75`,
+  `${origin}/_next/image?url=%2Fprofile-original.webp&w=256&q=75`,
   { headers: { Accept: "image/avif,image/webp" } },
 );
 assert.equal(optimized.status, 200);

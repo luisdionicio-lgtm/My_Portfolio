@@ -30,6 +30,10 @@ const icons: Record<string, string> = {
   Flutter: "flutter",
   Git: "git",
   AWS: "amazonwebservices",
+  Dart: "dart",
+  NestJS: "nestjs",
+  Redis: "redis",
+  Supabase: "supabase",
 };
 export function TechIcon({
   name,

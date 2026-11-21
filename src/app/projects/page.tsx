@@ -2,7 +2,7 @@ import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata(
   "Proyectos de software",
-  "Explora los proyectos web, backend, Android e IoT de Luis Dionicio: FerreMax, Factora, Aforo IoT, CookPlan y CeluMarket.",
+  "Explora los proyectos web, backend, Android e IoT de Luis Dionicio: FerreMax, EduControl 360, G&M Campo, Factora, Aforo IoT y más.",
   "/projects",
 );
 export default function ProjectsPage() {
@@ -22,9 +22,9 @@ export default function ProjectsPage() {
       <h2 className="sr-only">Colección de proyectos</h2>
       <ProjectExplorer />
       <p className="project-note">
-        Proyectos académicos y de portafolio para demostración local. Las
-        ilustraciones conceptuales se identifican en cada detalle; FerreMax
-        incluye una captura real del repositorio.
+        Proyectos académicos y de portafolio. Consulta el estado y alcance de
+        cada uno en su detalle. Las ilustraciones conceptuales se identifican en
+        cada detalle; FerreMax incluye una captura real del repositorio.
       </p>
     </section>
   );

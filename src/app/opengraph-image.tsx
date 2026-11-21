@@ -12,8 +12,8 @@ export default function Image() {
         width: "100%",
         height: "100%",
         padding: "65px 75px",
-        background: "#111410",
-        color: "#f4f5ef",
+        background: "#101112",
+        color: "#f5f2ed",
         fontFamily: "sans-serif",
       }}
     >
@@ -30,9 +30,9 @@ export default function Image() {
         }}
       >
         <div>De una idea a algo</div>
-        <div style={{ color: "#c4f566" }}>que sí funciona.</div>
+        <div style={{ color: "#d7b578" }}>que sí funciona.</div>
       </div>
-      <div style={{ display: "flex", fontSize: 26, color: "#b7bcb1" }}>
+      <div style={{ display: "flex", fontSize: 26, color: "#b5b1aa" }}>
         React · TypeScript · Node.js · Kotlin / Lima, Perú
       </div>
     </div>,

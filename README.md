@@ -30,12 +30,19 @@ Las auditorías ejecutan Chrome en modo headless y requieren Google Chrome insta
 | Ruta | Contenido |
 | --- | --- |
 | `/` | Perfil con foto, presentación y proyectos destacados |
-| `/projects` | Cinco proyectos reales con filtros por categoría |
+| `/projects` | Doce proyectos reales con filtros por categoría |
 | `/projects/ferremax` | Detalle del comercio electrónico FerreMax |
 | `/projects/factora` | Detalle de ventas e inventario Factora |
 | `/projects/aforo-iot` | Detalle del prototipo Aforo IoT |
 | `/projects/cookplan` | Detalle de la aplicación Android CookPlan |
 | `/projects/celumarket` | Detalle de la plataforma CeluMarket |
+| `/projects/educontrol-360` | Portales educativos EduControl 360 |
+| `/projects/gm-campo` | Visitas técnicas con G&M Campo |
+| `/projects/lasjijas` | Plataforma educativa de pronósticos LASJIJAS |
+| `/projects/mediguard` | Proyecto colaborativo MediGuard AI |
+| `/projects/sabor-andino` | Aplicación Android Sabor Andino |
+| `/projects/el-refugio` | Autenticación con NextAuth.js |
+| `/projects/archivos-magicos` | Biblioteca con PostgreSQL y Supabase |
 | `/about` | Perfil, experiencia, formación e iconos de tecnologías |
 | `/sitemap.xml` | Sitemap generado desde los datos de proyectos |
 | `/robots.txt` | Directivas de rastreo y referencia al sitemap |
@@ -57,7 +64,9 @@ El origen SEO se configura con `NEXT_PUBLIC_SITE_URL` en `.env.local`, siguiendo
 
 ## Evidencias y laboratorio
 
+- [Dirección visual y referencias](docs/DISENO.md).
 - [Desarrollo, verificación y cinco conclusiones](docs/LABORATORIO_14.md).
+- [Fuentes y alcance de los doce proyectos](docs/PROYECTOS.md).
 - [Resultados de Lighthouse](docs/evidencias/lighthouse-summary.json).
 - [Comprobación automática de SEO](docs/evidencias/seo-check.json).
 - Capturas de las páginas y de los archivos SEO en `docs/evidencias/`.

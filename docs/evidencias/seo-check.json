@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T16:11:02.353Z",
+  "checkedAt": "2026-11-21T16:21:38.022Z",
   "origin": "http://localhost:3000",
   "results": [
     {
@@ -113,9 +113,107 @@
         "lang es",
         "h1 único"
       ]
+    },
+    {
+      "route": "/projects/educontrol-360",
+      "status": 200,
+      "title": "EduControl 360 — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/gm-campo",
+      "status": 200,
+      "title": "G&amp;M Campo — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/lasjijas",
+      "status": 200,
+      "title": "LASJIJAS — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/mediguard",
+      "status": 200,
+      "title": "MediGuard AI — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/sabor-andino",
+      "status": 200,
+      "title": "Sabor Andino — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/el-refugio",
+      "status": 200,
+      "title": "El Refugio — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/archivos-magicos",
+      "status": 200,
+      "title": "Archivos mágicos — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
     }
   ],
-  "sitemapUrls": 8,
+  "sitemapUrls": 15,
   "robots": "OK",
   "missingProject": 404,
   "excludedContact": 404,

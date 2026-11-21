@@ -111,7 +111,8 @@ export default async function ProjectPage({
             ))}
           </ul>
           <p className="detail-status">
-            Estado: {project.status}. Sin despliegue en producción.
+            Estado: {project.status}. Consulta el alcance y la documentación en
+            el repositorio.
           </p>
         </section>
         <aside className="stack-panel">
