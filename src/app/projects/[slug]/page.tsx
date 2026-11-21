@@ -26,7 +26,12 @@ export async function generateMetadata({
     openGraph: {
       ...base.openGraph,
       images: [
-        { url: project.image, width: 1200, height: 750, alt: project.imageAlt },
+        {
+          url: project.image,
+          width: project.imageWidth ?? 1200,
+          height: project.imageHeight ?? 750,
+          alt: project.imageAlt,
+        },
       ],
     },
     twitter: { ...base.twitter, images: [project.image] },
@@ -90,16 +95,17 @@ export default async function ProjectPage({
         <Image
           src={project.image}
           alt={project.imageAlt}
-          width={1200}
-          height={750}
+          width={project.imageWidth ?? 1200}
+          height={project.imageHeight ?? 750}
           sizes="(max-width: 1200px) 100vw, 1200px"
           preload
         />
         <figcaption>
-          {project.slug === "ferremax" ||
-          project.image.includes("/screenshots/")
-            ? "Captura real del proyecto · Fuente: su repositorio de GitHub."
-            : "Ilustración conceptual del proyecto. No representa una captura de la aplicación."}
+          {project.imageCaption ??
+            (project.slug === "ferremax" ||
+            project.image.includes("/screenshots/")
+              ? "Captura real del proyecto · Fuente: su repositorio de GitHub."
+              : "Ilustración conceptual del proyecto. No representa una captura de la aplicación.")}
         </figcaption>
       </figure>
       <div className="detail-columns">

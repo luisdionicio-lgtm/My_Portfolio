@@ -21,3 +21,5 @@ Las portadas conceptuales están identificadas como ilustraciones. FerreMax util
 
 
 Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.
+
+Capturas proporcionadas por Luis: CeluMarket, El Refugio, G&M Melacampos y MediGuard AI Mobile. Se conservan los archivos originales y sus proporciones, con textos alternativos y atribución. La imagen de G&M muestra la plataforma web vinculada a G&M Campo.

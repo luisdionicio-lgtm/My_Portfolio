@@ -33,9 +33,10 @@ export function ProjectCard({
         <Image
           src={project.image}
           alt={project.imageAlt}
-          width={1200}
-          height={750}
+          width={project.imageWidth ?? 1200}
+          height={project.imageHeight ?? 750}
           sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          style={{ objectFit: project.imageFit ?? "cover" }}
           loading="lazy"
         />
         <span className="image-explore">Explorar proyecto</span>

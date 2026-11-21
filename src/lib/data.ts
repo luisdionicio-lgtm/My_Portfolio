@@ -110,9 +110,8 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Una plataforma académica para administrar productos, precios y existencias en una tienda de celulares.",
-    image: "/projects/celumarket.webp",
-    imageAlt:
-      "Ilustración conceptual de CeluMarket y su catálogo de celulares; no es una captura de la aplicación",
+    image: "/projects/screenshots/provided/celumarket.png",
+    imageAlt: "CeluMarket: pantalla de inicio de la tienda de celulares",
     technologies: ["PHP", "Laravel", "Tailwind CSS", "MySQL"],
     githubUrl: `${personalInfo.github}/CELUMARKET`,
     featured: false,
@@ -123,6 +122,10 @@ export const projects: Project[] = [
       "Operaciones CRUD y organización de la lógica de negocio.",
       "Proyecto de formación sin despliegue en producción.",
     ],
+    imageWidth: 1324,
+    imageHeight: 664,
+    imageFit: "contain",
+    imageCaption: "Captura real proporcionada por Luis Dionicio.",
   },
   {
     slug: "educontrol-360",
@@ -159,9 +162,9 @@ export const projects: Project[] = [
     category: "Mobile",
     description:
       "Una aplicación Flutter para documentar visitas técnicas, tomar medidas y preparar propuestas PDF conectadas con un panel web.",
-    image: "/projects/gm-campo.webp",
+    image: "/projects/screenshots/provided/gm-campo.png",
     imageAlt:
-      "Ilustración conceptual de G&M Campo y sus visitas técnicas; no es una captura de la aplicación",
+      "Plataforma web G&M Melacampos: portada de materiales y proyectos",
     technologies: ["Flutter", "Dart", "PostgreSQL", "Docker"],
     githubUrl: "https://github.com/luisdionicio-lgtm/App_Mobile_GyMelacampos",
     featured: true,
@@ -173,6 +176,11 @@ export const projects: Project[] = [
       "Generación de propuestas PDF con cotización y bosquejos acotados.",
       "Conexión mediante API al backend y PostgreSQL compartidos con la web. Las medidas se ingresan manualmente.",
     ],
+    imageWidth: 1942,
+    imageHeight: 1088,
+    imageFit: "contain",
+    imageCaption:
+      "Captura proporcionada por Luis de la plataforma web G&M Melacampos, relacionada con la aplicación G&M Campo.",
   },
   {
     slug: "lasjijas",
@@ -209,9 +217,9 @@ export const projects: Project[] = [
     category: "Mobile",
     description:
       "Proyecto académico colaborativo de primeros auxilios con aplicación Android, plataforma web y servicios backend.",
-    image: "/projects/mediguard.webp",
+    image: "/projects/screenshots/provided/mediguard.png",
     imageAlt:
-      "Ilustración conceptual del proyecto académico MediGuard AI; no es una captura de la aplicación",
+      "MediGuard AI Mobile: inicio con SOS, guías, centros y accesos rápidos",
     technologies: [
       "Kotlin",
       "Android",
@@ -231,6 +239,10 @@ export const projects: Project[] = [
       "El sistema documenta guías, contactos, eventos SOS, cursos y certificados.",
       "El repositorio integra frontend React y servicios Spring Boot y Django. Es un proyecto de formación; no se presenta como servicio clínico validado.",
     ],
+    imageWidth: 504,
+    imageHeight: 1090,
+    imageFit: "contain",
+    imageCaption: "Captura real proporcionada por Luis Dionicio.",
   },
   {
     slug: "sabor-andino",
@@ -259,9 +271,9 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Un laboratorio de autenticación con identidad visual temática, acceso por proveedores OAuth y rutas protegidas en Next.js.",
-    image: "/projects/el-refugio.webp",
+    image: "/projects/screenshots/provided/el-refugio.png",
     imageAlt:
-      "Ilustración conceptual de autenticación y rutas protegidas de El Refugio; no es una captura de la aplicación",
+      "El Refugio: pantalla de autenticación con Google, GitHub y correo",
     technologies: ["Next.js", "TypeScript", "SQLite", "PostgreSQL"],
     githubUrl: "https://github.com/luisdionicio-lgtm/LAB13_NEXT_Auth",
     featured: false,
@@ -273,6 +285,10 @@ export const projects: Project[] = [
       "Sesiones JWT, dashboard y perfil protegidos; bloqueo temporal tras intentos fallidos.",
       "Implementación académica: no incluye verificación de correo ni recuperación de contraseña.",
     ],
+    imageWidth: 2084,
+    imageHeight: 1122,
+    imageFit: "contain",
+    imageCaption: "Captura real proporcionada por Luis Dionicio.",
   },
   {
     slug: "archivos-magicos",

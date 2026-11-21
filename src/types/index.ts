@@ -5,6 +5,10 @@ export interface Project {
   description: string;
   image: string;
   imageAlt: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageFit?: "cover" | "contain";
+  imageCaption?: string;
   technologies: string[];
   githubUrl: string;
   featured: boolean;
