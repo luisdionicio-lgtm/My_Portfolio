@@ -4,6 +4,8 @@
 
 El documento conserva la guía y completa el procedimiento de las partes 1 a 6, con cinco conclusiones. La sección TAREA está excluida por indicación del estudiante.
 
+Esta entrega conserva la evidencia del laboratorio antes de iniciar la TAREA. La continuación del proyecto, su despliegue y los pendientes del dominio se documentan en [TAREA.md](../TAREA.md). El Word se actualizará con la TAREA y las capturas públicas cuando esté configurado el dominio definitivo.
+
 El anexo contiene las siguientes evidencias, revisadas el 21 de noviembre de 2026:
 
 | Páginas del Word | Evidencia |

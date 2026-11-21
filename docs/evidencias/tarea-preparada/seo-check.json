@@ -1,0 +1,237 @@
+{
+  "checkedAt": "2026-11-21T17:30:41.586Z",
+  "origin": "http://localhost:3000",
+  "baseUrl": "http://localhost:3001",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Luis Dionicio — Desarrollador Full Stack en Lima",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects",
+      "status": 200,
+      "title": "Proyectos de software | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "title": "Sobre mí | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "title": "Contacto | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/ferremax",
+      "status": 200,
+      "title": "FerreMax — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/factora",
+      "status": 200,
+      "title": "Factora — Backend | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/aforo-iot",
+      "status": 200,
+      "title": "Aforo IoT — IoT | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/cookplan",
+      "status": 200,
+      "title": "CookPlan — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/celumarket",
+      "status": 200,
+      "title": "CeluMarket — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/educontrol-360",
+      "status": 200,
+      "title": "EduControl 360 — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/gm-campo",
+      "status": 200,
+      "title": "G&amp;M Campo — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/lasjijas",
+      "status": 200,
+      "title": "LASJIJAS — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/mediguard",
+      "status": 200,
+      "title": "MediGuard AI — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/sabor-andino",
+      "status": 200,
+      "title": "Sabor Andino — Mobile | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/el-refugio",
+      "status": 200,
+      "title": "El Refugio — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    },
+    {
+      "route": "/projects/archivos-magicos",
+      "status": 200,
+      "title": "Archivos mágicos — Full Stack | Luis Dionicio",
+      "verified": [
+        "title único",
+        "description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "lang es",
+        "h1 único"
+      ]
+    }
+  ],
+  "sitemapUrls": 16,
+  "robots": "OK",
+  "missingProject": 404,
+  "contact": 200,
+  "openGraphImage": "OK",
+  "optimizedProfile": "image/avif"
+}

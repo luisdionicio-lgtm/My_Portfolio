@@ -1,10 +1,10 @@
 # Luis Dionicio — Portafolio personal
 
-Portafolio de Luis Angel Dionicio Bartolo, estudiante de Diseño y Desarrollo de Software en Tecsup, con información y fotografía de su perfil de LinkedIn. Desarrollo del laboratorio 14 de Optimización y SEO, partes 1 a 6. **La sección TAREA está excluida:** no se implementa página de contacto, dominio personalizado ni despliegue en Vercel.
+Portafolio de Luis Angel Dionicio Bartolo, estudiante de Diseño y Desarrollo de Software en Tecsup, con información y fotografía de su perfil de LinkedIn. Desarrollo del laboratorio 14 de Optimización y SEO, partes 1 a 6, más la página de contacto de la TAREA y la configuración para Vercel. El dominio personalizado y las capturas finales de la TAREA se completarán cuando Luis proporcione el dominio. [Estado de la TAREA y despliegue](docs/TAREA.md).
 
 ## Ejecutar
 
-Requisitos: Node.js 20.9 o superior y npm. Validado con Node.js 26.12.1 y Next.js 16.4.6.
+Requisitos: Node.js 26.x y npm. Validado con Node.js 26.12.1 y Next.js 16.4.6.
 
 ```bash
 npm ci
@@ -17,6 +17,7 @@ Abrir [localhost:3000](http://localhost:3000). Para reproducir las auditorías, 
 npm run lint
 npm run build
 npm run typecheck
+npm run check:origin
 npm start
 # En otra terminal, con el servidor en ejecución:
 npm run check:seo
@@ -44,6 +45,7 @@ Las auditorías ejecutan Chrome en modo headless y requieren Google Chrome insta
 | `/projects/el-refugio` | Autenticación con NextAuth.js |
 | `/projects/archivos-magicos` | Biblioteca con PostgreSQL y Supabase |
 | `/about` | Perfil, experiencia, formación e iconos de tecnologías |
+| `/contact` | Formulario por correo, contacto por LinkedIn, perfil y acceso a GitHub |
 | `/sitemap.xml` | Sitemap generado desde los datos de proyectos |
 | `/robots.txt` | Directivas de rastreo y referencia al sitemap |
 
@@ -60,12 +62,13 @@ Las auditorías ejecutan Chrome en modo headless y requieren Google Chrome insta
 - Recursos visuales e iconos locales; no se depende de URLs temporales de LinkedIn para mostrar la foto.
 - Semántica, enlace de salto, controles por teclado, foco visible y respeto de movimiento reducido.
 
-El origen SEO se configura con `NEXT_PUBLIC_SITE_URL` en `.env.local`, siguiendo `.env.example`. Para este laboratorio es `http://localhost:3000`; no se declara un dominio público inexistente. Los metadatos y el sitemap se generan al compilar. Una auditoría local valida la implementación técnica, pero no significa que el sitio esté publicado o indexado por Google.
+El origen SEO se configura con `NEXT_PUBLIC_SITE_URL` en `.env.local`, siguiendo `.env.example`. En desarrollo se utiliza `http://localhost:3000`. En Vercel, si no se define la variable, se utiliza `VERCEL_PROJECT_PRODUCTION_URL` y después `VERCEL_URL`. Los metadatos, el sitemap de dieciséis URLs y robots se generan al compilar. Las previews de Vercel solicitan no indexación mediante metadatos y robots. [Configuración y cambio de dominio](docs/TAREA.md).
 
 ## Evidencias y laboratorio
 
 - [Word completado con capturas completas y evidencias de las partes 1 a 6](docs/entrega/GLAB-S14-LUIS-DIONICIO-EVIDENCIAS.docx).
 - [Índice de evidencias y páginas del Word](docs/entrega/README.md).
+- [Estado de la TAREA y preparación del dominio](docs/TAREA.md).
 - [Dirección visual y referencias](docs/DISENO.md).
 - [Desarrollo, verificación y cinco conclusiones](docs/LABORATORIO_14.md).
 - [Fuentes y alcance de los doce proyectos](docs/PROYECTOS.md).

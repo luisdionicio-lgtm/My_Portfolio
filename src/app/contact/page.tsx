@@ -3,10 +3,11 @@ import Link from "next/link";
 import { BriefcaseBusiness, MapPin, MessageSquare } from "lucide-react";
 import { personalInfo } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata = pageMetadata(
   "Contacto",
-  "Contacta a Luis Angel Dionicio Bartolo en LinkedIn para conversar sobre prácticas preprofesionales, desarrollo web, aplicaciones móviles y proyectos de software en Lima, Perú.",
+  "Contacta a Luis Angel Dionicio Bartolo por correo o LinkedIn para conversar sobre prácticas preprofesionales, desarrollo web, aplicaciones móviles y proyectos de software en Lima, Perú.",
   "/contact",
 );
 
@@ -26,18 +27,7 @@ export default function ContactPage() {
           ¿Tienes un proyecto en mente o una oportunidad para aprender y
           aportar? Me gustaría conocerla. Hablemos de lo que podemos construir.
         </p>
-        <a
-          className="button primary contact-primary"
-          href={personalInfo.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <MessageSquare size={22} aria-hidden="true" />
-          Hablemos en LinkedIn
-        </a>
-        <p className="contact-hint">
-          Abre mi perfil para conectar o enviarme un mensaje desde LinkedIn.
-        </p>
+        <ContactForm recipient={process.env.CONTACT_EMAIL} />
         <div className="contact-topics">
           <p className="eyebrow accent">PODEMOS CONVERSAR SOBRE</p>
           <ul>
@@ -83,7 +73,7 @@ export default function ContactPage() {
             <MessageSquare size={22} aria-hidden="true" />
             <span>
               <strong>Conectemos</strong>
-              <span>Mi perfil profesional en LinkedIn</span>
+              <span>Hablemos en LinkedIn</span>
             </span>
           </a>
           <a

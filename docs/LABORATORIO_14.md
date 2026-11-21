@@ -4,7 +4,7 @@ Luis Angel Dionicio Bartolo · Diseño y Desarrollo de Software · Tecsup
 
 [Word completado con evidencias](entrega/GLAB-S14-LUIS-DIONICIO-EVIDENCIAS.docx) · [Índice de páginas y capturas](entrega/README.md). El Word incluye las quince páginas completas del portafolio, inicio móvil, sitemap, robots, metadatos, auditorías y conclusiones.
 
-Se desarrolló un portafolio personal con Next.js, información profesional verificada en LinkedIn, fotografía original de perfil, iconos locales y temas adaptativos, con estética editorial en grafito y dorado. [Dirección visual y referencias](DISENO.md). El portafolio incluye doce proyectos de GitHub y seis destacados en la portada. [Fuentes y alcance](PROYECTOS.md). El trabajo cubre las partes 1 a 6 del procedimiento. La sección TAREA se excluyó por indicación del estudiante; no hay página de contacto, dominio personalizado ni despliegue.
+Se desarrolló un portafolio personal con Next.js, información profesional verificada en LinkedIn, fotografía original de perfil, iconos locales y temas adaptativos, con estética editorial en grafito y dorado. [Dirección visual y referencias](DISENO.md). El portafolio incluye doce proyectos de GitHub y seis destacados en la portada. [Fuentes y alcance](PROYECTOS.md). Este informe y el Word documentan las partes 1 a 6 del procedimiento. La continuación de la TAREA incorpora contacto y preparación de despliegue; su estado actual se registra en [TAREA.md](TAREA.md).
 
 ## Parte 1 Meta tags dinámicos
 
@@ -44,7 +44,7 @@ FerreMax utiliza una captura real recortada de su repositorio para mejorar la le
 
 ## Parte 4 Sitemap dinámico
 
-`src/app/sitemap.ts` crea `/sitemap.xml` desde las páginas principales y el arreglo de proyectos. Contiene quince URLs: inicio, listado, perfil y los doce detalles. Añadir un proyecto al arreglo incorpora su URL al sitemap en la siguiente compilación.
+`src/app/sitemap.ts` crea `/sitemap.xml` desde las páginas principales y el arreglo de proyectos. La evidencia original contiene quince URLs: inicio, listado, perfil y los doce detalles. La continuación de la TAREA añade contacto y eleva el total a dieciséis. Añadir un proyecto al arreglo incorpora su URL al sitemap en la siguiente compilación.
 
 El origen se obtiene de `NEXT_PUBLIC_SITE_URL`; se utiliza `http://localhost:3000` durante el laboratorio. No se declara un dominio ficticio ni se afirma que estas URLs locales estén indexadas por buscadores.
 
@@ -62,7 +62,7 @@ El origen se obtiene de `NEXT_PUBLIC_SITE_URL`; se utiliza `http://localhost:300
 
 ## Parte 6 Verificación de SEO
 
-Se verificaron títulos únicos, descripciones, canonical, etiquetas Open Graph, Twitter Card, idioma español y un solo encabezado principal por página. También se comprobaron las respuestas de sitemap, robots, imagen social, optimización de imágenes y los errores 404. La página de contacto no existe, conforme al alcance solicitado.
+Se verificaron títulos únicos, descripciones, canonical, etiquetas Open Graph, Twitter Card, idioma español y un solo encabezado principal por página. También se comprobaron las respuestas de sitemap, robots, imagen social, optimización de imágenes y los errores 404. La evidencia original corresponde al laboratorio sin contacto. La página de contacto y la verificación de las dieciséis rutas se añadieron en la continuación de la TAREA.
 
 Las auditorías Lighthouse se ejecutaron en Chrome headless, con el servidor de producción `npm start`, en modo Desktop y Mobile para inicio, listado, detalle FerreMax y perfil. Los archivos HTML conservan el detalle de cada auditoría y los JSON permiten reproducir el resumen. Los valores varían con el equipo, caché y carga del sistema; no equivalen a métricas de usuarios en producción.
 
