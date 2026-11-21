@@ -8,6 +8,10 @@ La continuación incorpora la página de contacto y prepara la aplicación para 
 
 El proyecto se creó en el equipo Luis' projects desde la rama `main` de GitHub. Vercel confirmó el primer despliegue en Production. Se configuraron las variables de producción `CONTACT_EMAIL` con el correo indicado por Luis y `NEXT_PUBLIC_SITE_URL` con el origen público de Vercel. El dominio personalizado sigue pendiente.
 
+La actualización `a984d93` alcanzó el estado Ready en Production. El 21 de noviembre de 2026 se comprobó el sitio público con `check:seo`: dieciséis rutas con respuesta 200, metadatos propios, canonical y archivos SEO con el origen HTTPS de Vercel, imagen social, AVIF/WebP y respuesta 404 para proyectos inexistentes. El formulario publicado incluye el destino configurado y permite iniciar el envío. [Resultado de la verificación pública](evidencias/vercel/seo-check.json) · [Sitemap público verificado](evidencias/vercel/sitemap.xml) · [Robots público verificado](evidencias/vercel/robots.txt).
+
+La recepción de mensajes no se ha probado: sigue pendiente confirmar FormSubmit en la cuenta receptora. La publicación en Vercel y la configuración del destino no equivalen a una entrega de correo comprobada.
+
 ## Implementación
 
 - `/contact` presenta un formulario con nombre, correo, asunto y mensaje, además del perfil, la foto original, intereses profesionales y enlaces reales a LinkedIn y GitHub.

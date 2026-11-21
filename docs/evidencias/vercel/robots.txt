@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://luis-dionicio-portfolio.vercel.app
+Sitemap: https://luis-dionicio-portfolio.vercel.app/sitemap.xml
