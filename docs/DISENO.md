@@ -12,10 +12,13 @@ Se exploraron imágenes de portafolios oscuros en Pinterest y se contrastó la d
 - [Arik de Pawel Gola](https://dribbble.com/shots/21200765-Arik-Portfolio-Framer-Template): jerarquía editorial y contraste entre tonos oscuros y dorados.
 - [Concepto minimalista de Kevin Miranda](https://dribbble.com/shots/6409183-Minimalistic-Black-Gold-Portfolio-Landing-Page-Concept): nombre protagonista, tipografía de contraste y acentos contenidos.
 
-La implementación es propia: no se incorporó código de esas plantillas ni se usaron retratos de otras personas. Las portadas de proyectos son ilustraciones conceptuales identificadas, salvo FerreMax, que usa una captura real de su repositorio.
+La implementación es propia: no se incorporó código de esas plantillas ni se usaron retratos de otras personas. Las portadas de proyectos son ilustraciones conceptuales identificadas, salvo FerreMax, EduControl 360, LASJIJAS y Archivos mágicos, que usan capturas reales de sus repositorios.
 
 ## Adaptación y accesibilidad
 
 El selector admite Claro, Oscuro y Sistema, conserva la preferencia y aplica el tema antes de la hidratación. El modo claro utiliza blanco, grafito y dorado más oscuro para mantener contraste. Los controles tienen foco visible y las transiciones respetan la preferencia de movimiento reducido.
 
 La fotografía incluye texto alternativo y variantes responsivas mediante `next/image`. La interfaz mantiene metadatos, sitemap y robots como parte del laboratorio; la estética no incorpora la página de contacto ni el despliegue de la sección TAREA.
+
+
+Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.

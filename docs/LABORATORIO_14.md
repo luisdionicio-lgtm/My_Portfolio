@@ -26,7 +26,7 @@ El diseño del perfil presenta el nombre, la especialidad, la foto de LinkedIn, 
 
 Las tarjetas y la ilustración de la página de perfil usan `loading="lazy"`. Las imágenes principales de cada página usan precarga. Los atributos `width`, `height` y `sizes` reservan espacio y permiten elegir recursos según la pantalla. La foto de perfil tiene una versión WebP local. La prueba HTTP confirma la respuesta optimizada en AVIF o WebP.
 
-FerreMax utiliza una captura real recortada de su repositorio para mejorar la lectura en tarjetas. Las otras portadas son ilustraciones conceptuales identificadas en el texto alternativo y en los detalles. No se presentan como capturas reales.
+FerreMax utiliza una captura real recortada de su repositorio para mejorar la lectura en tarjetas. EduControl 360, LASJIJAS y Archivos mágicos también utilizan capturas reales. Las portadas restantes son ilustraciones conceptuales identificadas en el texto alternativo y en los detalles. No se presentan como capturas reales.
 
 ### Evidencias de las páginas
 
@@ -98,3 +98,6 @@ Se comprobó en Chrome que el filtro Mobile devuelve CookPlan, G&M Campo, MediGu
 [Repositorio del laboratorio](https://github.com/luisdionicio-lgtm/My_Portfolio)
 
 [Perfil profesional de LinkedIn](https://www.linkedin.com/in/luis-angel-dionicio-bartolo-988b26445/) · [Metadata API](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) · [next/image](https://nextjs.org/docs/app/api-reference/components/image) · [Sitemap](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap) · [Robots](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots)
+
+
+Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.

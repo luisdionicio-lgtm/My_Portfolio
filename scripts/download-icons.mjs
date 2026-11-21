@@ -33,6 +33,7 @@ const names = [
   "nestjs",
   "redis",
   "supabase",
+  "github",
 ];
 for (const name of names) {
   const response = await fetch(

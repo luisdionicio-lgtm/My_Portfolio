@@ -24,7 +24,8 @@ export default function ProjectsPage() {
       <p className="project-note">
         Proyectos académicos y de portafolio. Consulta el estado y alcance de
         cada uno en su detalle. Las ilustraciones conceptuales se identifican en
-        cada detalle; FerreMax incluye una captura real del repositorio.
+        cada detalle; FerreMax, EduControl 360, LASJIJAS y Archivos mágicos
+        incluyen capturas reales de sus repositorios.
       </p>
     </section>
   );

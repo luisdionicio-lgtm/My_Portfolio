@@ -1,3 +1,4 @@
+import { Code2, Server, Smartphone, Cpu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/types";
@@ -9,6 +10,12 @@ export function ProjectCard({
   project: Project;
   index?: number;
 }) {
+  const CategoryIcon = {
+    "Full Stack": Code2,
+    Backend: Server,
+    Mobile: Smartphone,
+    IoT: Cpu,
+  }[project.category];
   return (
     <article className={`project-card ${project.color}`}>
       <Link
@@ -17,7 +24,11 @@ export function ProjectCard({
         aria-label={`${project.category} ${String(index + 1).padStart(2, "0")} Explorar proyecto ${project.title}`}
       >
         <div className="image-label">
-          {project.category} <span>{String(index + 1).padStart(2, "0")}</span>
+          <span className="category-label">
+            <CategoryIcon size={15} aria-hidden="true" />
+            {project.category}
+          </span>{" "}
+          <span>{String(index + 1).padStart(2, "0")}</span>
         </div>
         <Image
           src={project.image}

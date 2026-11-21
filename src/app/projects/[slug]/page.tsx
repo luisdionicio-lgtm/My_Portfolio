@@ -96,8 +96,9 @@ export default async function ProjectPage({
           preload
         />
         <figcaption>
-          {project.slug === "ferremax"
-            ? "Captura real de la tienda · Fuente: repositorio de FerreMax."
+          {project.slug === "ferremax" ||
+          project.image.includes("/screenshots/")
+            ? "Captura real del proyecto · Fuente: su repositorio de GitHub."
             : "Ilustración conceptual del proyecto. No representa una captura de la aplicación."}
         </figcaption>
       </figure>

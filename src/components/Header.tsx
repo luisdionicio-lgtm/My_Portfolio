@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { ThemeSelect } from "./ThemeSelect";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,6 +40,14 @@ export function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <Image
+            src="/icons/github.svg"
+            className="github-icon"
+            width={18}
+            height={18}
+            alt=""
+            aria-hidden="true"
+          />{" "}
           GitHub
         </a>
       </div>

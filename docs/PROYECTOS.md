@@ -18,3 +18,6 @@ Selección de doce proyectos reales del GitHub de Luis Angel Dionicio Bartolo. L
 | Archivos mágicos | [LAB_12_SUPABASE-NEXT](https://github.com/luisdionicio-lgtm/LAB_12_SUPABASE-NEXT) | Gestión de autores y libros con Next.js, Prisma y PostgreSQL en Supabase; demo sin autenticación. |
 
 Las portadas conceptuales están identificadas como ilustraciones. FerreMax utiliza una captura real del repositorio. La publicación previa de otros laboratorios no implica desplegar este portafolio: el despliegue, dominio y página de contacto de la sección TAREA siguen fuera del alcance.
+
+
+Actualización visual: iconos oficiales con insignias y colores por tecnología. FerreMax, EduControl 360, LASJIJAS y Archivos mágicos muestran capturas reales de sus repositorios; las demás portadas se mantienen identificadas como ilustraciones conceptuales.

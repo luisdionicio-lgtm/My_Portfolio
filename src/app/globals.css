@@ -2460,3 +2460,128 @@ body {
     font-size: 13px;
   }
 }
+/* Identidad cromática de cada tecnología, con iconos oficiales y texto legible. */
+.tech {
+  --tech-color: #d7b578;
+  display: inline-flex;
+  gap: 9px;
+  padding: 8px 11px;
+  border: 1px solid color-mix(in srgb, var(--tech-color) 38%, var(--border));
+  background: color-mix(in srgb, var(--tech-color) 8%, var(--panel));
+  border-radius: 7px;
+  color: var(--text);
+  white-space: nowrap;
+  line-height: 1.4;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.tech:hover {
+  border-color: var(--tech-color);
+  background: color-mix(in srgb, var(--tech-color) 16%, var(--panel));
+}
+.tech-icon,
+.project-body .tech-icon,
+.skill-grid .tech-icon {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+}
+.stack-strip .tech {
+  font-size: 14px;
+}
+.stack-strip > .shell {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  gap: 24px;
+}
+.stack-strip > .shell > div {
+  gap: 12px;
+}
+.project-body .tech {
+  font-size: 12px;
+  padding: 6px 9px;
+}
+.skill-grid .tech {
+  font-size: 14px;
+  padding: 8px 11px;
+}
+.portrait-caption .profile-stack {
+  gap: 8px;
+}
+.portrait-caption .tech {
+  font-size: 12px;
+  padding: 6px 8px;
+  background: #111318c9;
+  color: #f5f2ed;
+}
+.portrait-caption .tech-icon {
+  width: 20px;
+  height: 20px;
+}
+.stack-panel .tech {
+  padding: 9px 12px;
+}
+.category-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  background: #101112e8;
+  border: 1px solid #ffffff35;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #fff;
+}
+.image-label > span {
+  opacity: 1;
+}
+.header-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+@media (max-width: 1100px) {
+  .stack-strip > .shell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .portrait-caption .tech {
+    font-size: 11px;
+    padding: 5px 7px;
+  }
+  .portrait-caption .tech-icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 800px) {
+  .header-github {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .stack-strip > .shell > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+  }
+  .stack-strip .tech {
+    font-size: 13px;
+  }
+  .stack-strip .tech-icon {
+    width: 23px;
+    height: 23px;
+  }
+  .portrait-caption .tech {
+    font-size: 11px;
+  }
+  .project-body .tech {
+    font-size: 13px;
+  }
+}
+.github-icon {
+  background: #f5f2ed;
+  border-radius: 50%;
+  padding: 1px;
+}

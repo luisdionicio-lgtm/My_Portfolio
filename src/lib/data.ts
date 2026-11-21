@@ -130,9 +130,9 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Una base para conectar instituciones, estudiantes y procesos académicos mediante portales web y permisos por rol.",
-    image: "/projects/educontrol.webp",
+    image: "/projects/screenshots/educontrol.webp",
     imageAlt:
-      "Ilustración conceptual de los portales académicos de EduControl 360; no es una captura de la aplicación",
+      "Captura real del portal académico EduControl 360, demostración Campus Atelier",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -180,9 +180,9 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Pronósticos de fútbol, rankings y salas privadas en una plataforma educativa con reglas de puntuación validadas en el servidor.",
-    image: "/projects/lasjijas.webp",
+    image: "/projects/screenshots/lasjijas.webp",
     imageAlt:
-      "Ilustración conceptual de las salas y estadísticas de LASJIJAS; no es una captura de la aplicación",
+      "Captura real del dashboard local de LASJIJAS con pronósticos y estadísticas",
     technologies: [
       "React",
       "TypeScript",
@@ -280,9 +280,8 @@ export const projects: Project[] = [
     category: "Full Stack",
     description:
       "Un sistema de biblioteca para gestionar autores y libros, explorar un catálogo y consultar estadísticas con PostgreSQL en Supabase.",
-    image: "/projects/archivos-magicos.webp",
-    imageAlt:
-      "Ilustración conceptual de la biblioteca Archivos mágicos; no es una captura de la aplicación",
+    image: "/projects/screenshots/biblioteca.webp",
+    imageAlt: "Captura real del catálogo de libros de Archivos mágicos",
     technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Supabase"],
     githubUrl: "https://github.com/luisdionicio-lgtm/LAB_12_SUPABASE-NEXT",
     featured: false,
