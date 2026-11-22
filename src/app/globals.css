@@ -2911,3 +2911,84 @@ body {
     will-change: auto;
   }
 }
+
+/* Los iconos ocupan el margen vacío de cada sección, nunca su texto o controles. */
+.with-tech-accents {
+  position: relative;
+  padding-bottom: 110px;
+}
+.section-tech-accents {
+  position: absolute;
+  bottom: 14px;
+  left: 24px;
+  right: 24px;
+  height: 64px;
+  pointer-events: none;
+  overflow: hidden;
+  contain: layout paint;
+}
+.section-tech-accents > span {
+  position: absolute;
+  animation: section-tech-float 10s ease-in-out infinite alternate;
+  opacity: 0.72;
+}
+.section-tech-accents > span:nth-child(1) {
+  left: 6%;
+  top: 14px;
+  animation-delay: -3s;
+}
+.section-tech-accents > span:nth-child(2) {
+  left: 34%;
+  top: 25px;
+  animation-delay: -7s;
+  animation-duration: 13s;
+}
+.section-tech-accents > span:nth-child(3) {
+  left: 63%;
+  top: 12px;
+  animation-delay: -5s;
+}
+.section-tech-accents > span:nth-child(4) {
+  left: 88%;
+  top: 23px;
+  animation-delay: -1s;
+  animation-duration: 12s;
+}
+.section-tech-accents .tech {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.section-tech-accents .tech-icon {
+  width: 28px;
+  height: 28px;
+}
+@keyframes section-tech-float {
+  from {
+    transform: translate3d(-7px, -6px, 0) rotate(-12deg);
+  }
+  to {
+    transform: translate3d(8px, 7px, 0) rotate(12deg);
+  }
+}
+@media (max-width: 800px) {
+  .with-tech-accents {
+    padding-bottom: 92px;
+  }
+  .section-tech-accents {
+    left: 21px;
+    right: 21px;
+    bottom: 10px;
+    height: 58px;
+  }
+  .section-tech-accents .tech-icon {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-tech-accents > span {
+    animation: none;
+  }
+}

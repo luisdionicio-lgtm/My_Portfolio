@@ -1,3 +1,4 @@
+import { TechAccents } from "@/components/TechAccents";
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -29,7 +30,7 @@ export default function Home() {
           __html: JSON.stringify(person).replace(/</g, "\\u003c"),
         }}
       />
-      <section className="hero shell">
+      <section className="hero shell with-tech-accents">
         <div className="hero-copy">
           <div className="availability">
             <span /> Disponible para prácticas preprofesionales
@@ -114,6 +115,7 @@ export default function Home() {
             Mi perfil profesional en LinkedIn
           </a>
         </aside>
+        <TechAccents />
       </section>
       <div className="stack-strip">
         <div className="shell">
@@ -132,7 +134,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="section shell">
+      <section className="section shell with-tech-accents">
         <div className="section-heading">
           <div>
             <p className="eyebrow accent">
@@ -156,8 +158,9 @@ export default function Home() {
               <ProjectCard project={project} index={index} key={project.slug} />
             ))}
         </div>
+        <TechAccents />
       </section>
-      <section className="about-teaser shell">
+      <section className="about-teaser shell with-tech-accents">
         <div>
           <p className="eyebrow accent">LA PERSONA DETRÁS DEL CÓDIGO</p>
           <h2>
@@ -177,8 +180,9 @@ export default function Home() {
             Más sobre mi recorrido
           </Link>
         </div>
+        <TechAccents />
       </section>
-      <section className="connect shell">
+      <section className="connect shell with-tech-accents">
         <span className="eyebrow">SIGAMOS CONECTADOS</span>
         <h2>
           La próxima idea
@@ -191,6 +195,7 @@ export default function Home() {
         <span className="connect-art" aria-hidden="true">
           ✳
         </span>
+        <TechAccents />
       </section>
     </>
   );

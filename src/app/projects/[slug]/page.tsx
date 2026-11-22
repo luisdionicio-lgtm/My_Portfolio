@@ -1,3 +1,4 @@
+import { TechAccents } from "@/components/TechAccents";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -57,7 +58,7 @@ export default async function ProjectPage({
     codeRepository: project.githubUrl,
   };
   return (
-    <article className="shell page-section project-detail">
+    <article className="shell page-section project-detail with-tech-accents">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -144,6 +145,7 @@ export default async function ProjectPage({
           ))}
         </div>
       </section>
+      <TechAccents />
     </article>
   );
 }

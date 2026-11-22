@@ -1,3 +1,4 @@
+import { TechAccents } from "@/components/TechAccents";
 import Image from "next/image";
 import { skills, personalInfo } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
@@ -10,7 +11,7 @@ export const metadata = pageMetadata(
 export default function AboutPage() {
   return (
     <>
-      <section className="shell page-section about-intro">
+      <section className="shell page-section about-intro with-tech-accents">
         <div>
           <p className="eyebrow accent">MÁS ALLÁ DEL EDITOR</p>
           <h1 className="page-title">
@@ -79,8 +80,9 @@ export default function AboutPage() {
             Ver mi perfil en LinkedIn
           </a>
         </div>
+        <TechAccents />
       </section>
-      <section className="shell section journey">
+      <section className="shell section journey with-tech-accents">
         <p className="eyebrow accent">MI RECORRIDO</p>
         <h2>
           Formación y experiencia<span>.</span>
@@ -122,8 +124,9 @@ export default function AboutPage() {
             </div>
           </article>
         </div>
+        <TechAccents />
       </section>
-      <section className="shell section">
+      <section className="shell section with-tech-accents">
         <div className="section-heading">
           <div>
             <p className="eyebrow accent">MI CAJA DE HERRAMIENTAS</p>
@@ -151,8 +154,9 @@ export default function AboutPage() {
             </article>
           ))}
         </div>
+        <TechAccents />
       </section>
-      <section className="shell learning">
+      <section className="shell learning with-tech-accents">
         <div>
           <p className="eyebrow accent">APRENDER HACIENDO</p>
           <h2>
@@ -180,6 +184,7 @@ export default function AboutPage() {
           sizes="(max-width: 700px) 100vw, 50vw"
           loading="lazy"
         />
+        <TechAccents />
       </section>
     </>
   );

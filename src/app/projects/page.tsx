@@ -1,3 +1,4 @@
+import { TechAccents } from "@/components/TechAccents";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata(
@@ -7,7 +8,7 @@ export const metadata = pageMetadata(
 );
 export default function ProjectsPage() {
   return (
-    <section className="shell page-section">
+    <section className="shell page-section with-tech-accents">
       <p className="eyebrow accent">DE LA CURIOSIDAD AL CÓDIGO</p>
       <h1 className="page-title">
         Ideas en
@@ -27,6 +28,7 @@ export default function ProjectsPage() {
         cada detalle; FerreMax, EduControl 360, LASJIJAS y Archivos mágicos
         incluyen capturas reales de sus repositorios.
       </p>
+      <TechAccents />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import { TechAccents } from "@/components/TechAccents";
 import Image from "next/image";
 import Link from "next/link";
 import { BriefcaseBusiness, MapPin, MessageSquare } from "lucide-react";
@@ -13,7 +14,7 @@ export const metadata = pageMetadata(
 
 export default function ContactPage() {
   return (
-    <section className="shell page-section contact-page">
+    <section className="shell page-section contact-page with-tech-accents">
       <div className="contact-intro">
         <p className="eyebrow accent">CONTACTO</p>
         <h1 className="page-title">
@@ -98,6 +99,7 @@ export default function ContactPage() {
           Explorar mis proyectos
         </Link>
       </aside>
+      <TechAccents />
     </section>
   );
 }
