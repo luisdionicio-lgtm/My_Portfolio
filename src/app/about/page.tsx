@@ -50,9 +50,11 @@ export default function AboutPage() {
             continúo explorando backend y desarrollo móvil.
           </p>
           <p>
-            Busco prácticas preprofesionales para aportar en un equipo, aprender
-            de la revisión de código y fortalecer mis habilidades construyendo
-            funcionalidades reales.
+            Utilizo herramientas de inteligencia artificial como Claude, OpenAI
+            y GitHub Copilot para explorar ideas, apoyar el desarrollo y crear
+            diseños e interfaces. Creo que, con imaginación, ganas de aprender
+            y constancia, una idea puede convertirse en algo real: una solución
+            que funcione y un diseño que conecte con las personas.
           </p>
           <a
             className="text-link"
