@@ -1,12 +1,12 @@
 # Tarea del laboratorio 14
 
-La continuación incorpora la página de contacto y prepara la aplicación para Vercel. Luis autorizó publicar primero con el subdominio de Vercel; proporcionará después el dominio personalizado para las capturas definitivas y la actualización del Word.
+La TAREA incorpora contacto por formulario, despliegue en Vercel y el dominio gratuito luis-dionicio.duckdns.org conectado mediante DNS. Las evidencias y el Word completo documentan el estado publicado.
 
 ## Publicación en Vercel
 
-[Sitio público](https://luis-dionicio-portfolio.vercel.app) · [Contacto](https://luis-dionicio-portfolio.vercel.app/contact) · [Proyecto en Vercel](https://vercel.com/luis-projects-afa44a82/luis-dionicio-portfolio).
+[Sitio público DuckDNS](https://luis-dionicio.duckdns.org) · [Contacto](https://luis-dionicio.duckdns.org/contact) · [Dirección de Vercel](https://luis-dionicio-portfolio.vercel.app) · [Proyecto en Vercel](https://vercel.com/luis-projects-afa44a82/luis-dionicio-portfolio).
 
-El proyecto se creó en el equipo Luis' projects desde la rama `main` de GitHub. Vercel confirmó el primer despliegue en Production. Se configuraron las variables de producción `CONTACT_EMAIL` con el correo indicado por Luis y `NEXT_PUBLIC_SITE_URL` con el origen público de Vercel. El dominio personalizado sigue pendiente.
+El proyecto se creó en el equipo Luis' projects desde la rama `main` de GitHub. Vercel confirmó el primer despliegue en Production. Se configuraron las variables de producción `CONTACT_EMAIL` con el correo indicado por Luis y `NEXT_PUBLIC_SITE_URL` con el origen público de Vercel. Después se registró luis-dionicio.duckdns.org en DuckDNS y se actualizó NEXT_PUBLIC_SITE_URL para utilizarlo. [Configuración DNS](DOMINIO_DUCKDNS.md).
 
 La actualización `a984d93` alcanzó el estado Ready en Production. El 21 de noviembre de 2026 se comprobó el sitio público con `check:seo`: dieciséis rutas con respuesta 200, metadatos propios, canonical y archivos SEO con el origen HTTPS de Vercel, imagen social, AVIF/WebP y respuesta 404 para proyectos inexistentes. El formulario publicado incluye el destino configurado y permite iniciar el envío. [Resultado de la verificación pública](evidencias/vercel/seo-check.json) · [Sitemap público verificado](evidencias/vercel/sitemap.xml) · [Robots público verificado](evidencias/vercel/robots.txt).
 
@@ -34,9 +34,9 @@ La recepción de mensajes no se ha probado: sigue pendiente confirmar FormSubmit
 
 La compilación en Vercel rechaza HTTP o localhost para evitar publicar canonical y sitemap con URLs locales. La configuración rechaza credenciales, rutas, consultas y fragmentos en el origen. Las pruebas de `npm run check:origin` verifican estas condiciones.
 
-## Vincular el dominio definitivo
+## Mantenimiento del dominio
 
-Cuando Luis proporcione el dominio:
+El dominio luis-dionicio.duckdns.org ya fue añadido a Production y configurado con el registro A 216.198.79.1 indicado por Vercel. Para un cambio futuro de dominio:
 
 1. Añadirlo en Settings → Domains del proyecto de Vercel.
 2. Configurar en el proveedor del dominio los registros DNS que muestre Vercel. No se fijan registros inventados ni valores genéricos en este repositorio.
@@ -46,7 +46,7 @@ Cuando Luis proporcione el dominio:
 6. Verificar las dieciséis rutas públicas, los enlaces de contacto, sitemap, robots, imágenes, metadatos y errores 404. Repetir Lighthouse en Desktop y Mobile sobre producción.
 7. Tomar las capturas definitivas del sitio, contacto, archivos SEO, estado del despliegue y dominio validado. Incorporar al Word la sección TAREA, las capturas y los enlaces públicos reales. Hacer commit y push de la entrega.
 
-No se ha obtenido ni asociado un dominio personalizado. Las capturas locales de contacto en `evidencias/tarea-preparada/` son comprobaciones de desarrollo; no acreditan el dominio ni sustituyen las capturas finales.
+Se registró y asoció el dominio gratuito de DuckDNS. Las capturas locales en `evidencias/tarea-preparada/` conservan la fase de desarrollo. Las evidencias del dominio y del sitio publicado se guardan en `evidencias/duckdns/`; la captura de DuckDNS excluye el token de la cuenta.
 
 ## Activación del correo
 

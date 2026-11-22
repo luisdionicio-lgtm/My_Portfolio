@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/",
+    "tags": [
+      "<title>Luis Dionicio — Desarrollador Full Stack en Lima</title>",
+      "<meta name=\"description\" content=\"Estudiante de Diseño y Desarrollo de Software en Tecsup. Desarrollo aplicaciones web y móviles con React, TypeScript, Node.js y Kotlin en Lima, Perú.\">",
+      "<link rel=\"canonical\" href=\"https://luis-dionicio.duckdns.org\">",
+      "<meta property=\"og:title\" content=\"Luis Dionicio — Desarrollador Full Stack en Lima | Luis Dionicio\">",
+      "<meta property=\"og:url\" content=\"https://luis-dionicio.duckdns.org\">",
+      "<meta property=\"og:image\" content=\"https://luis-dionicio.duckdns.org/opengraph-image\">",
+      "<meta name=\"twitter:card\" content=\"summary_large_image\">"
+    ]
+  },
+  {
+    "path": "/projects/ferremax",
+    "tags": [
+      "<title>FerreMax — Full Stack | Luis Dionicio</title>",
+      "<meta name=\"description\" content=\"Del catálogo al inventario: una plataforma de comercio electrónico para conectar la tienda con su operación diaria.\">",
+      "<link rel=\"canonical\" href=\"https://luis-dionicio.duckdns.org/projects/ferremax\">",
+      "<meta property=\"og:title\" content=\"FerreMax — Full Stack | Luis Dionicio\">",
+      "<meta property=\"og:url\" content=\"https://luis-dionicio.duckdns.org/projects/ferremax\">",
+      "<meta property=\"og:image\" content=\"https://luis-dionicio.duckdns.org/projects/ferremax-cover.webp\">",
+      "<meta name=\"twitter:card\" content=\"summary_large_image\">"
+    ]
+  }
+]

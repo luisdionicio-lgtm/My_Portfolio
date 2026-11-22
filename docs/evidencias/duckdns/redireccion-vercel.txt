@@ -1,0 +1,10 @@
+HTTP/2 308 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Sat, 21 Nov 2026 18:00:32 GMT
+location: https://luis-dionicio.duckdns.org/contact
+refresh: 0;url=https://luis-dionicio.duckdns.org/contact
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-id: gru1::jd6hn-1795284032673-f59792b36c43
+

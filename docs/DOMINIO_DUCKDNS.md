@@ -24,3 +24,5 @@ La aplicación toma el dominio de `NEXT_PUBLIC_SITE_URL` al compilar para genera
 El token de DuckDNS no es necesario en el código del portafolio, en Vercel ni en GitHub. No se guarda en el repositorio ni en las evidencias.
 
 Referencias: [API de DuckDNS](https://www.duckdns.org/spec.jsp) · [Configuración de dominios en Vercel](https://vercel.com/docs/domains/working-with-domains/add-a-domain).
+
+La dirección anterior de Vercel redirige con código 308 al dominio DuckDNS, conservando las rutas. El panel mantiene Proxy Status Unknown; se documenta sin ocultarlo. Se comprobaron DNS público, HTTPS, dieciséis rutas y diez auditorías directamente sobre el dominio.

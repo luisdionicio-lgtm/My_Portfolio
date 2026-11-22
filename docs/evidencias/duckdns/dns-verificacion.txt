@@ -1,0 +1,5 @@
+
+; <<>> DiG 9.10.6 <<>> @1.1.1.1 luis-dionicio.duckdns.org A +noall +answer
+; (1 server found)
+;; global options: +cmd
+luis-dionicio.duckdns.org. 45	IN	A	216.198.79.1

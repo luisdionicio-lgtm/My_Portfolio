@@ -1,0 +1,122 @@
+[
+  {
+    "page": "inicio",
+    "path": "/",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:57:42.304Z"
+  },
+  {
+    "page": "inicio",
+    "path": "/",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:57:55.004Z"
+  },
+  {
+    "page": "proyectos",
+    "path": "/projects",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:58:06.953Z"
+  },
+  {
+    "page": "proyectos",
+    "path": "/projects",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:58:20.820Z"
+  },
+  {
+    "page": "detalle",
+    "path": "/projects/ferremax",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:58:33.724Z"
+  },
+  {
+    "page": "detalle",
+    "path": "/projects/ferremax",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:58:45.458Z"
+  },
+  {
+    "page": "perfil",
+    "path": "/about",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:58:57.025Z"
+  },
+  {
+    "page": "perfil",
+    "path": "/about",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:59:09.120Z"
+  },
+  {
+    "page": "contacto",
+    "path": "/contact",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:59:20.788Z"
+  },
+  {
+    "page": "contacto",
+    "path": "/contact",
+    "mode": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fetchTime": "2026-11-21T17:59:32.221Z"
+  }
+]

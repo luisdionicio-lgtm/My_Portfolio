@@ -1,5 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync } from "node:fs";
 const pages = [
   ["inicio", "/"],
   ["proyectos", "/projects"],
@@ -8,10 +9,12 @@ const pages = [
   ["contacto", "/contact"],
 ];
 const origin = process.env.AUDIT_BASE_URL || "http://localhost:3000";
+const outputDir = process.env.AUDIT_OUTPUT_DIR || "docs/evidencias";
+mkdirSync(outputDir, { recursive: true });
 const summary = [];
 for (const [name, path] of pages) {
   for (const mode of ["desktop", "mobile"]) {
-    const base = `docs/evidencias/lighthouse-${name}-${mode}`;
+    const base = `${outputDir}/lighthouse-${name}-${mode}`;
     const args = [
       "node_modules/lighthouse/cli/index.js",
       `${origin}${path}`,
@@ -42,7 +45,7 @@ for (const [name, path] of pages) {
   }
 }
 writeFileSync(
-  "docs/evidencias/lighthouse-summary.json",
+  `${outputDir}/lighthouse-summary.json`,
   JSON.stringify(summary, null, 2),
 );
 if (

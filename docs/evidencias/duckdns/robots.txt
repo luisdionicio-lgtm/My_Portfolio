@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://luis-dionicio.duckdns.org
+Sitemap: https://luis-dionicio.duckdns.org/sitemap.xml
