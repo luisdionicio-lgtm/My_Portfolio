@@ -2803,3 +2803,111 @@ body {
     gap: 10px;
   }
 }
+
+/* Movimiento decorativo limitado al espacio libre de la presentación personal. */
+.about-intro {
+  min-height: 0;
+  align-items: start;
+  padding-bottom: 40px;
+}
+.about-tech-cloud {
+  position: relative;
+  height: 300px;
+  max-width: 480px;
+  overflow: hidden;
+  pointer-events: none;
+  isolation: isolate;
+}
+.about-tech-cloud::before {
+  content: "";
+  position: absolute;
+  inset: 10% 8%;
+  background: radial-gradient(
+    ellipse,
+    color-mix(in srgb, var(--accent) 9%, transparent),
+    transparent 70%
+  );
+  z-index: -1;
+}
+.about-floating-tech {
+  position: absolute;
+  animation: about-tech-drift 9s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.about-floating-tech .tech {
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid color-mix(in srgb, var(--tech-color) 35%, var(--border));
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #00000012;
+  font-size: 14px;
+}
+.about-floating-tech .tech-icon {
+  width: 29px;
+  height: 29px;
+}
+.about-floating-tech:nth-child(1) {
+  left: 8%;
+  top: 12%;
+  animation-delay: -2s;
+}
+.about-floating-tech:nth-child(2) {
+  left: 52%;
+  top: 6%;
+  animation-delay: -6s;
+  animation-duration: 11s;
+}
+.about-floating-tech:nth-child(3) {
+  left: 28%;
+  top: 40%;
+  animation-delay: -4s;
+}
+.about-floating-tech:nth-child(4) {
+  left: 63%;
+  top: 53%;
+  animation-delay: -8s;
+  animation-duration: 12s;
+}
+.about-floating-tech:nth-child(5) {
+  left: 5%;
+  top: 70%;
+  animation-delay: -5s;
+  animation-duration: 10s;
+}
+.about-floating-tech:nth-child(6) {
+  left: 47%;
+  top: 79%;
+  animation-delay: -1s;
+}
+@keyframes about-tech-drift {
+  from {
+    transform: translate3d(-5px, -9px, 0) rotate(-5deg);
+  }
+  to {
+    transform: translate3d(7px, 12px, 0) rotate(5deg);
+  }
+}
+@media (max-width: 800px) {
+  .about-tech-cloud {
+    height: 210px;
+    max-width: 460px;
+    margin-top: 15px;
+  }
+  .about-floating-tech .tech {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .about-floating-tech .tech-icon {
+    width: 23px;
+    height: 23px;
+  }
+  .about-floating-tech:nth-child(6) {
+    top: 76%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-floating-tech {
+    animation: none;
+    will-change: auto;
+  }
+}

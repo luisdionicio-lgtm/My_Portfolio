@@ -22,6 +22,20 @@ export default function AboutPage() {
             <br />
             elección.
           </h1>
+          <div className="about-tech-cloud" aria-hidden="true">
+            {[
+              "React",
+              "TypeScript",
+              "JavaScript",
+              "Node.js",
+              "Python",
+              "Kotlin",
+            ].map((name) => (
+              <span className="about-floating-tech" key={name}>
+                <TechIcon name={name} />
+              </span>
+            ))}
+          </div>
         </div>
         <div className="about-story">
           <Image
@@ -52,8 +66,8 @@ export default function AboutPage() {
           <p>
             Utilizo herramientas de inteligencia artificial como Claude, OpenAI
             y GitHub Copilot para explorar ideas, apoyar el desarrollo y crear
-            diseños e interfaces. Creo que, con imaginación, ganas de aprender
-            y constancia, una idea puede convertirse en algo real: una solución
+            diseños e interfaces. Creo que, con imaginación, ganas de aprender y
+            constancia, una idea puede convertirse en algo real: una solución
             que funcione y un diseño que conecte con las personas.
           </p>
           <a
