@@ -1,3 +1,9 @@
+# Versión revisada y ordenada
+
+[Descargar Word actualizado](GLAB-S14-LUIS-DIONICIO-ORDENADO.docx).
+
+Captura de perfil actualizada con Claude, OpenAI y Copilot; enlaces destacados y clicables; imágenes centradas y guía de lectura para las evidencias de la TAREA.
+
 # Entrega completa del laboratorio 14
 
 [Descargar Word completo](GLAB-S14-LUIS-DIONICIO-COMPLETO.docx).

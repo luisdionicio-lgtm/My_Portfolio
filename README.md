@@ -68,6 +68,8 @@ El origen SEO se configura con `NEXT_PUBLIC_SITE_URL` en `.env.local`, siguiendo
 
 ## Evidencias y laboratorio
 
+- [Entrega revisada y ordenada con enlaces resaltados](docs/entrega/GLAB-S14-LUIS-DIONICIO-ORDENADO.docx).
+
 - [Word completo con laboratorio, TAREA, DuckDNS y conclusiones resumidas](docs/entrega/GLAB-S14-LUIS-DIONICIO-COMPLETO.docx).
 
 - [Word completado con capturas completas y evidencias de las partes 1 a 6](docs/entrega/GLAB-S14-LUIS-DIONICIO-EVIDENCIAS.docx).
